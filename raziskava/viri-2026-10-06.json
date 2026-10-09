@@ -1,0 +1,103 @@
+[
+ {
+  "key": "kulturnidom-ng.si",
+  "name": "Kulturni dom Nova Gorica",
+  "url": "https://kulturnidom-ng.si/dogodki/",
+  "how": "En seznam vseh dogodkov z uro: kino, koncerti, gostovanja",
+  "status": "ok"
+ },
+ {
+  "key": "sng-ng.si",
+  "name": "SNG Nova Gorica",
+  "url": "https://www.sng-ng.si/sl/spored/",
+  "how": "Mesečni spored z uro; november še ni objavljen",
+  "status": "ok"
+ },
+ {
+  "key": "kulturnidom.it",
+  "name": "Kulturni dom Gorica",
+  "url": "https://kulturnidom.it/wp/eventi/",
+  "how": "Koledar z uro",
+  "status": "ok"
+ },
+ {
+  "key": "mostovna.com",
+  "name": "Mostovna",
+  "url": "https://www.mostovna.com/dogodki",
+  "how": "Mesečni seznam koncertov z uro",
+  "status": "ok"
+ },
+ {
+  "key": "go2025.eu",
+  "name": "GO! 2025",
+  "url": "https://www.go2025.eu/en/whats-up/events",
+  "how": "Koledar z uro, a večinoma razstave in šport; festivalske predstave brez ure",
+  "status": "mid"
+ },
+ {
+  "key": "centerbratuz.org",
+  "name": "KC Lojze Bratuž",
+  "url": "https://www.centerbratuz.org/dogodki.html",
+  "how": "Seznam brez ure; ura je na strani dogodka",
+  "status": "mid"
+ },
+ {
+  "key": "turizem-novagorica-vipavskadolina.si",
+  "name": "TIC Nova Gorica in Vipavska dolina",
+  "url": "https://dogodki.turizem-novagorica-vipavskadolina.si/sl/koledar-dogodkov/",
+  "how": "Tudi gostilne in krajevne skupnosti; veliko tečajev in večtedenskih dogodkov",
+  "status": "mid"
+ },
+ {
+  "key": "kinemax.it",
+  "name": "Kinemax Gorizia",
+  "url": "https://www.kinemax.it/orari.php",
+  "how": "Redni spored le dan ali dva vnaprej; posebne projekcije prej",
+  "status": "mid"
+ },
+ {
+  "key": "comune.gorizia.it",
+  "name": "Comune di Gorizia",
+  "url": "https://www.comune.gorizia.it/it/events",
+  "how": "Skoraj samo festivali in razstave, ura le v besedilu",
+  "status": "mid"
+ },
+ {
+  "name": "Palchi nei parchi",
+  "url": "https://www.comune.gorizia.it/it/palchi-nei-parchi-193920",
+  "how": "Poletna serija; stran je iz leta 2023",
+  "status": "dead"
+ },
+ {
+  "key": "carinarnica.org",
+  "name": "Carinarnica",
+  "url": "https://www.carinarnica.org/blog/categories/events",
+  "how": "Zadnji napovedan dogodek maja 2026",
+  "status": "dead"
+ },
+ {
+  "name": "Knjigarna in kavarna Maks",
+  "url": "https://knjigarna-maks.si/category/aktualno/",
+  "how": "Zadnja objava julija 2025; dogodki so v koledarju TIC",
+  "status": "dead"
+ },
+ {
+  "key": "facebook.com/arcigong",
+  "name": "Circolo ARCI Gong",
+  "url": "https://www.facebook.com/arcigong/",
+  "how": "Dogodki 1 do 3 tedne vnaprej, samo na Facebooku",
+  "status": "fb"
+ },
+ {
+  "key": "facebook.com/mamaangela",
+  "name": "Enoteca Mama Angela",
+  "url": "https://www.facebook.com/profile.php?id=100049067625242&sk=events",
+  "how": "Ta hip brez napovedanih dogodkov",
+  "status": "fb"
+ },
+ {
+  "name": "WhatsApp skupina",
+  "how": "Izvozi klepet (brez medijev) in ga prilepi v AI",
+  "status": "closed"
+ }
+]

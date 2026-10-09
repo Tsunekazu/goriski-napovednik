@@ -1,0 +1,72 @@
+[
+ {
+  "name": "Circolo ARCI Gong",
+  "url": "https://www.facebook.com/arcigong/",
+  "why": "samo Facebook"
+ },
+ {
+  "name": "Enoteca Mama Angela",
+  "url": "https://mamaangela.com/",
+  "why": "spletna stran ne deluje (napaka 521), dogodki le na Facebooku"
+ },
+ {
+  "name": "SKD Hrast Doberdob",
+  "url": "",
+  "why": "samo Facebook"
+ },
+ {
+  "name": "SKD F.B. Sedej Števerjan",
+  "url": "",
+  "why": "samo Facebook"
+ },
+ {
+  "name": "Marco Polo Club",
+  "url": "https://www.entrio.si/",
+  "why": "brez lastne strani; dogodki le na Entriu"
+ },
+ {
+  "name": "Zavod GONG",
+  "url": "https://zavodgong.org/dogodki/",
+  "why": "stran dela, dogodkov ne objavlja"
+ },
+ {
+  "name": "Knjigarna in kavarna Maks",
+  "url": "https://knjigarna-maks.si/category/aktualno/",
+  "why": "zadnja objava julija 2025"
+ },
+ {
+  "name": "Let's Go Gorizia",
+  "url": "https://letsgo.gorizia.it/events/",
+  "why": "stran se ne odzove"
+ },
+ {
+  "name": "ERT FVG – Gorizia",
+  "url": "https://ertfvg.it/teatri/gorizia/",
+  "why": "brez seznama dogodkov za Gorico"
+ },
+ {
+  "name": "Comune di Gradisca d'Isonzo",
+  "url": "https://www.comune.gradiscadisonzo.go.it/",
+  "why": "izriše se šele z JavaScriptom; gledališče pokriva ArtistiAssociati"
+ },
+ {
+  "name": "MojaObčina – Renče-Vogrsko",
+  "url": "https://www.mojaobcina.si/rence-vogrsko/",
+  "why": "ni bilo najti dogodkov"
+ },
+ {
+  "name": "Eventim",
+  "url": "https://www.eventim.si/city/nova-gorica-5773/",
+  "why": "blokira skripte"
+ },
+ {
+  "name": "Entrio",
+  "url": "https://www.entrio.si/",
+  "why": "blokira skripte"
+ },
+ {
+  "name": "Bandsintown",
+  "url": "https://www.bandsintown.com/c/nova-gorica-slovenia",
+  "why": "blokira skripte"
+ }
+]

@@ -1,0 +1,101 @@
+[
+ {
+  "date": "2026-10-26",
+  "time": "20:45",
+  "title": "Prima del temporale",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Prosa",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/prima-del-temporale/"
+ },
+ {
+  "date": "2026-11-10",
+  "time": "20:45",
+  "title": "Le ultime lune",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Prosa",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/le-ultime-lune/"
+ },
+ {
+  "date": "2026-11-19",
+  "time": "20:45",
+  "title": "Accabadora",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Verdi Racconta",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/accabadora-2/"
+ },
+ {
+  "date": "2026-11-28",
+  "time": "20:45",
+  "title": "Il piccolo principe",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Grandi Eventi",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/il-piccolo-principe/"
+ },
+ {
+  "date": "2026-11-29",
+  "time": "16:00",
+  "title": "Il piccolo principe",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Grandi Eventi",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/il-piccolo-principe-2/"
+ },
+ {
+  "date": "2026-12-03",
+  "time": "20:45",
+  "title": "Joy",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "glasba",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Musica e Balletto",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/joy/"
+ },
+ {
+  "date": "2026-12-11",
+  "time": "20:45",
+  "title": "Totalmente incompatibili",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Grandi Eventi",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/totalmente-incompatibili/"
+ },
+ {
+  "date": "2026-12-17",
+  "time": "20:45",
+  "title": "Fratello sole, sorella luna",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Prosa",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/fratello-sole-sorella-luna/"
+ },
+ {
+  "date": "2026-12-27",
+  "time": "16:00",
+  "title": "Rudolph operazione natale",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Verdi Young Pomeridiane",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/rudolph-operazione-natale/"
+ }
+]

@@ -1,0 +1,83 @@
+[
+ {
+  "date": "2026-10-09",
+  "time": "17:30",
+  "title": "Tafiti",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-tafiti/"
+ },
+ {
+  "date": "2026-10-09",
+  "time": "20:15",
+  "title": "Mlade matere",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-mlade-matere/"
+ },
+ {
+  "date": "2026-10-09",
+  "time": "20:30",
+  "title": "Agenti",
+  "venue": "Kulturni dom Gorica",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-predstava-agenti/"
+ },
+ {
+  "date": "2026-10-10",
+  "time": "20:15",
+  "title": "Zeltune",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-zeltune/"
+ },
+ {
+  "date": "2026-10-10",
+  "time": "20:30",
+  "title": "Due donne e un delitto",
+  "venue": "Kulturni dom Gorica",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "sub": "Gledališki festival Castello di Gorizia",
+  "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-gledaliski-festival-castello-di-gorizia-predstava-due-donne-e-un-delitto/"
+ },
+ {
+  "date": "2026-10-13",
+  "time": "20:15",
+  "title": "Bridki božič",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-bridki-bozic/"
+ },
+ {
+  "date": "2026-10-14",
+  "time": "20:00",
+  "title": "Pegule",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-predstava-pegule/"
+ },
+ {
+  "date": "2026-10-19",
+  "time": "20:30",
+  "title": "Predvajanje nemega filma For Heaven Sake (1926) ob spremljavi orkestra Zerorchestra (Italija)",
+  "venue": "Kulturni dom Gorica",
+  "city": "GO",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-predvajanje-nemega-filma-for-heaven-sake-1926-ob-spremljavi-orkestra-zerorchestra-italija/"
+ }
+]

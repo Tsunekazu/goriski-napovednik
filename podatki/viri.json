@@ -1,0 +1,605 @@
+[
+ {
+  "key": "kulturnidom-ng.si",
+  "name": "Kulturni dom Nova Gorica",
+  "url": "https://kulturnidom-ng.si/dogodki/",
+  "side": "SI",
+  "zone": "core",
+  "type": "public",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "kdng",
+  "status": "active",
+  "prio": 1,
+  "how": "Dolg seznam z uro in ceno do decembra."
+ },
+ {
+  "key": "sng-ng.si",
+  "name": "SNG Nova Gorica",
+  "url": "https://www.sng-ng.si/sl/spored/",
+  "side": "SI",
+  "zone": "core",
+  "type": "public",
+  "cats": [
+   "gledalisce"
+  ],
+  "fetch": "sng",
+  "status": "active",
+  "prio": 1,
+  "how": "Mesečni spored z uro; naslednji mesec objavijo pozno."
+ },
+ {
+  "key": "mostovna.com",
+  "name": "Mostovna",
+  "url": "https://www.mostovna.com/dogodki",
+  "side": "SI",
+  "zone": "core",
+  "type": "venue",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "mostovna",
+  "status": "active",
+  "prio": 1,
+  "how": "Mesečni seznam koncertov z uro; SSL certifikat je pokvarjen."
+ },
+ {
+  "key": "glasbena-sola.si",
+  "name": "Glasbena šola Nova Gorica",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "side": "SI",
+  "zone": "core",
+  "type": "public",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 2,
+  "how": "Koledar do junija; veliko internih nastopov učencev, vzemi le javne koncerte."
+ },
+ {
+  "key": "pixxelpoint.org",
+  "name": "Pixxelpoint",
+  "url": "https://www.pixxelpoint.org/",
+  "side": "SI",
+  "zone": "core",
+  "type": "festival",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 2,
+  "how": "Festival novih medijev v oktobru; le zvočni in glasbeni del."
+ },
+ {
+  "key": "glasbesveta.si",
+  "name": "Glasbe sveta",
+  "url": "https://www.glasbesveta.si/",
+  "side": "SI",
+  "zone": "core",
+  "type": "festival",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "seasonal",
+  "prio": 3,
+  "how": "Poletni festival (konec julija do avgusta); Wix."
+ },
+ {
+  "key": "kudmorgan.org",
+  "name": "KUD Morgan",
+  "url": "https://www.kudmorgan.org/",
+  "side": "SI",
+  "zone": "core",
+  "type": "ngo",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "stale",
+  "prio": 2,
+  "how": "Jazz in glasbe sveta; Wix; zadnji dogodek 30. 6. 2026."
+ },
+ {
+  "key": "mc-novagorica.si",
+  "name": "Mladinski center Nova Gorica",
+  "url": "https://www.mc-novagorica.si/mc-za-vse/dogodki/",
+  "side": "SI",
+  "zone": "core",
+  "type": "public",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "stale",
+  "prio": 3,
+  "how": "Večinoma delavnice; koncerti redki."
+ },
+ {
+  "key": "goriskimuzej.si",
+  "name": "Goriški muzej",
+  "url": "https://goriskimuzej.si/aktualno",
+  "side": "SI",
+  "zone": "core",
+  "type": "public",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 3,
+  "how": "Večinoma razstave in predavanja; koncerti na gradu Kromberk."
+ },
+ {
+  "key": "gkfb.si",
+  "name": "Goriška knjižnica Franceta Bevka",
+  "url": "https://www.gkfb.si/dogodki",
+  "side": "SI",
+  "zone": "core",
+  "type": "public",
+  "cats": [
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 3,
+  "how": "Večinoma pravljične ure in predavanja; občasno predstave in projekcije."
+ },
+ {
+  "key": "ung.si",
+  "name": "Univerza v Novi Gorici",
+  "url": "https://ung.si/en/news/source/23/events/",
+  "side": "SI",
+  "zone": "core",
+  "type": "public",
+  "cats": [
+   "film",
+   "gledalisce"
+  ],
+  "fetch": "ai",
+  "status": "stale",
+  "prio": 3,
+  "how": "Občasne projekcije in predstave Akademije umetnosti."
+ },
+ {
+  "key": "samostan-kostanjevica.si",
+  "name": "Frančiškanski samostan Kostanjevica",
+  "url": "https://www.samostan-kostanjevica.si/sl/dogodki",
+  "side": "SI",
+  "zone": "core",
+  "type": "venue",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 3,
+  "how": "Občasni koncerti; zadnji 4. 9. 2026."
+ },
+ {
+  "key": "carinarnica.org",
+  "name": "Carinarnica",
+  "url": "https://www.carinarnica.org/blog/categories/events",
+  "side": "SI",
+  "zone": "core",
+  "type": "venue",
+  "cats": [
+   "glasba",
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "stale",
+  "prio": 3,
+  "how": "Zadnji dogodek maja 2026; Wix."
+ },
+ {
+  "key": "zkdng.si",
+  "name": "Zveza kulturnih društev Nova Gorica",
+  "url": "https://www.zkdng.si/dogodki/",
+  "side": "SI",
+  "zone": "core",
+  "type": "ngo",
+  "cats": [
+   "glasba",
+   "gledalisce"
+  ],
+  "fetch": "tribe:https://www.zkdng.si",
+  "status": "active",
+  "prio": 2,
+  "how": "Krovna zveza društev (tudi Šempeter-Vrtojba); koledar objavlja dogodke članic. Trenutno prazen."
+ },
+ {
+  "key": "turizem-novagorica-vipavskadolina.si",
+  "name": "TIC Nova Gorica in Vipavska dolina",
+  "url": "https://dogodki.turizem-novagorica-vipavskadolina.si/sl/koledar-dogodkov/",
+  "side": "SI",
+  "zone": "core",
+  "type": "aggregator",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "tic",
+  "status": "active",
+  "prio": 2,
+  "how": "Najširši koledar na slovenski strani; tudi Vipavska dolina, filtriraj kraj."
+ },
+ {
+  "key": "go2025.eu",
+  "name": "GO! 2025",
+  "url": "https://www.go2025.eu/en/whats-up/events",
+  "side": "SI",
+  "zone": "core",
+  "type": "aggregator",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 2,
+  "how": "Koledar še živi; večinoma razstave."
+ },
+ {
+  "key": "robin.si",
+  "name": "Radio Robin",
+  "url": "https://www.robin.si/dogodki/",
+  "side": "SI",
+  "zone": "core",
+  "type": "aggregator",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "tribe:https://www.robin.si",
+  "status": "active",
+  "prio": 2,
+  "how": "Regionalni koledar prek API-ja; naslov je oblike 'KRAJ, prizorišče - Vrsta: Naslov'."
+ },
+ {
+  "key": "kulturnik.si",
+  "name": "Kulturnik",
+  "url": "https://dogodki.kulturnik.si/?where=Nova+Gorica",
+  "side": "SI",
+  "zone": "core",
+  "type": "aggregator",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 3,
+  "how": "Vseslovenski koledar; zamuja za organizatorji."
+ },
+ {
+  "key": "kulturnidom.it",
+  "name": "Kulturni dom Gorica",
+  "url": "https://kulturnidom.it/wp/eventi/",
+  "side": "IT",
+  "zone": "core",
+  "type": "venue",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "tribe:https://kulturnidom.it/wp",
+  "status": "active",
+  "prio": 1,
+  "how": "Čist vir prek API-ja."
+ },
+ {
+  "key": "centerbratuz.org",
+  "name": "KC Lojze Bratuž",
+  "url": "https://www.centerbratuz.org/dogodki.html",
+  "side": "IT",
+  "zone": "core",
+  "type": "venue",
+  "cats": [
+   "glasba",
+   "gledalisce"
+  ],
+  "fetch": "bratuz",
+  "status": "active",
+  "prio": 1,
+  "how": "Seznam brez ure; ura je na strani dogodka."
+ },
+ {
+  "key": "kinemax.it",
+  "name": "Kinemax Gorizia",
+  "url": "https://www.kinemax.it/orari.php",
+  "side": "IT",
+  "zone": "core",
+  "type": "venue",
+  "cats": [
+   "film"
+  ],
+  "fetch": "kinemax:https://gorizia.kinemax.18tickets.it/",
+  "status": "active",
+  "prio": 1,
+  "how": "Redni spored le teden vnaprej; berem prodajno stran 18tickets."
+ },
+ {
+  "key": "comune.gorizia.it",
+  "name": "Comune di Gorizia",
+  "url": "https://www.comune.gorizia.it/it/events",
+  "side": "IT",
+  "zone": "core",
+  "type": "aggregator",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "js",
+  "status": "active",
+  "prio": 3,
+  "how": "Stran se izriše šele z JavaScriptom."
+ },
+ {
+  "key": "teatroverdi.gorizia.it",
+  "name": "Teatro Verdi",
+  "url": "https://www.teatroverdi.gorizia.it/cartellone/",
+  "side": "IT",
+  "zone": "core",
+  "type": "public",
+  "cats": [
+   "gledalisce",
+   "glasba"
+  ],
+  "fetch": "verdi",
+  "status": "active",
+  "prio": 1,
+  "how": "Cela sezona 2026/27 na eni strani; dnevi brez letnice."
+ },
+ {
+  "key": "artistiassociatigorizia.it",
+  "name": "ArtistiAssociati",
+  "url": "https://www.artistiassociatigorizia.it/",
+  "side": "IT",
+  "zone": "core",
+  "type": "ngo",
+  "cats": [
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "ical:https://www.artistiassociatigorizia.it/events.ics",
+  "status": "active",
+  "prio": 1,
+  "how": "Koledar iCal; večina predstav je v Krminu in Gradišču (okolica)."
+ },
+ {
+  "key": "goriziadancefestival.it",
+  "name": "Visavì Gorizia Dance Festival",
+  "url": "https://goriziadancefestival.it/it/programma/",
+  "side": "IT",
+  "zone": "core",
+  "type": "festival",
+  "cats": [
+   "gledalisce"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 2,
+  "how": "Plesni festival sredi oktobra, na obeh straneh meje."
+ },
+ {
+  "key": "kinoatelje.it",
+  "name": "Kinoatelje",
+  "url": "https://www.kinoatelje.it/it/in-programma/eventi/",
+  "side": "IT",
+  "zone": "core",
+  "type": "ngo",
+  "cats": [
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 2,
+  "how": "Izpusti TV prenose."
+ },
+ {
+  "key": "poklonviziji.com",
+  "name": "Poklon viziji",
+  "url": "https://www.poklonviziji.com/en/events/",
+  "side": "IT",
+  "zone": "core",
+  "type": "festival",
+  "cats": [
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "seasonal",
+  "prio": 3,
+  "how": "Čezmejni filmski festival konec septembra."
+ },
+ {
+  "key": "lipizer.it",
+  "name": "Associazione Rodolfo Lipizer",
+  "url": "https://www.lipizer.it/",
+  "side": "IT",
+  "zone": "core",
+  "type": "ngo",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 2,
+  "how": "Koncertna sezona v novicah na naslovni strani."
+ },
+ {
+  "key": "amidei.com",
+  "name": "Premio Sergio Amidei",
+  "url": "https://www.amidei.com/",
+  "side": "IT",
+  "zone": "core",
+  "type": "festival",
+  "cats": [
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "seasonal",
+  "prio": 3,
+  "how": "Poletni filmski festival (julij); program v PDF."
+ },
+ {
+  "key": "terzoteatro.org",
+  "name": "Terzo Teatro – Festival Castello di Gorizia",
+  "url": "https://www.terzoteatro.org/",
+  "side": "IT",
+  "zone": "core",
+  "type": "ngo",
+  "cats": [
+   "gledalisce",
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 2,
+  "how": "Festival od 10. 10. 2026 do 13. 2. 2027 v KD Gorica, Bratužu in Verdiju."
+ },
+ {
+  "key": "zskd.eu",
+  "name": "ZSKD – Zveza slovenskih kulturnih društev",
+  "url": "https://www.zskd.eu/",
+  "side": "IT",
+  "zone": "core",
+  "type": "ngo",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "ical:https://calendar.google.com/calendar/ical/koledar.zskd%40gmail.com/public/basic.ics",
+  "status": "active",
+  "prio": 2,
+  "how": "Javni Google koledar društev; veliko s Tržaškega, filtriraj kraj."
+ },
+ {
+  "key": "zskp.eu",
+  "name": "ZSKP – Zveza slovenske katoliške prosvete",
+  "url": "https://zskp.eu/",
+  "side": "IT",
+  "zone": "core",
+  "type": "ngo",
+  "cats": [
+   "glasba",
+   "gledalisce"
+  ],
+  "fetch": "tribe:https://zskp.eu",
+  "status": "stale",
+  "prio": 3,
+  "how": "Tudi ZCPZ (cerkveni zbori); koledar trenutno prazen."
+ },
+ {
+  "key": "emilkomel.eu",
+  "name": "SCGV Emil Komel",
+  "url": "https://emilkomel.eu/category/koncerti/",
+  "side": "IT",
+  "zone": "core",
+  "type": "ngo",
+  "cats": [
+   "glasba"
+  ],
+  "fetch": "ai",
+  "status": "stale",
+  "prio": 3,
+  "how": "Zadnji koncert februarja 2026."
+ },
+ {
+  "key": "scopri.gorizia.it",
+  "name": "Scopri Gorizia",
+  "url": "https://www.scopri.gorizia.it/eventi/",
+  "side": "IT",
+  "zone": "core",
+  "type": "aggregator",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "ical:https://www.scopri.gorizia.it/events.ics",
+  "status": "active",
+  "prio": 2,
+  "how": "Mestni turistični koledar."
+ },
+ {
+  "key": "turismofvg.it",
+  "name": "TurismoFVG",
+  "url": "https://www.turismofvg.it/eventi",
+  "side": "IT",
+  "zone": "core",
+  "type": "aggregator",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 3,
+  "how": "Deželni koledar; filtriraj Gorico, Krmin in Gradišče."
+ },
+ {
+  "key": "controtempo.org",
+  "name": "Circolo Controtempo",
+  "url": "https://controtempo.org/",
+  "side": "IT",
+  "zone": "ring",
+  "type": "ngo",
+  "cats": [
+   "glasba",
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 2,
+  "how": "Krmin; Jazz&Wine of Peace (22.–25. 10.)."
+ },
+ {
+  "key": "brda.si",
+  "name": "TIC Brda",
+  "url": "https://www.brda.si/sl/dogodki/",
+  "side": "SI",
+  "zone": "ring",
+  "type": "aggregator",
+  "cats": [
+   "glasba",
+   "gledalisce",
+   "film"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 3,
+  "how": "Turistični koledar Brd."
+ },
+ {
+  "key": "vilavipolze.eu",
+  "name": "Vila Vipolže",
+  "url": "https://vilavipolze.eu/en/events/",
+  "side": "SI",
+  "zone": "ring",
+  "type": "venue",
+  "cats": [
+   "glasba",
+   "gledalisce"
+  ],
+  "fetch": "ai",
+  "status": "active",
+  "prio": 3,
+  "how": "Koncerti in festivali v Brdih."
+ }
+]

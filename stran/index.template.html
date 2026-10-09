@@ -1,0 +1,450 @@
+<title>Goriški napovednik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: one present-first column of day blocks (big condensed date left, events right) under a sticky bar whose VU meter shows how busy each of the next 92 days is */
+:root {
+  --bg: #F1F3F2;
+  --paper: #FFFFFF;
+  --ink: #131A18;
+  --muted: #586562;
+  --rule: #D2D8D5;
+  --wash: #E3E8E5;
+  --glasba: #2E4FD6;
+  --gledalisce: #A12A8E;
+  --film: #0F7C86;
+  /* VU meter: temna plošča kot na mešalni mizi, v obeh temah */
+  --panel: #0C100F;
+  --panel-we: #161D1A;
+  --panel-edge: #0C100F;
+  --panel-ink: #EEF3F0;
+  --led-off: #222B28;
+  --led-g: #3CD46A;
+  --led-o: #FF9A1F;
+  --led-r: #FF4545;
+  --font-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --bar-h: 140px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1311; --paper: #151C19; --ink: #E2E8E5; --muted: #8E9D98; --rule: #28322E; --wash: #1B2420;
+    --glasba: #8499FF; --gledalisce: #E274CF; --film: #4CC3CD;
+    --panel: #070A09; --panel-we: #111715; --panel-edge: #2A3430;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1311; --paper: #151C19; --ink: #E2E8E5; --muted: #8E9D98; --rule: #28322E; --wash: #1B2420;
+  --glasba: #8499FF; --gledalisce: #E274CF; --film: #4CC3CD;
+  --panel: #070A09; --panel-we: #111715; --panel-edge: #2A3430;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.4; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.wrap { max-width: 70rem; margin-inline: auto; padding-inline: clamp(16px, 4vw, 40px); }
+[data-cat="glasba"] { --c: var(--glasba); }
+[data-cat="gledalisce"] { --c: var(--gledalisce); }
+[data-cat="film"] { --c: var(--film); }
+
+/* ——— glava ——— */
+.mast { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1rem 2rem; padding-block: 1.6rem 1.1rem; }
+.logo { margin: 0; font-family: var(--font-display); font-stretch: 62%; font-weight: 900; text-transform: uppercase;
+  font-size: clamp(2.7rem, 9vw, 5.6rem); line-height: .82; letter-spacing: -.005em; }
+.logo span { display: block; }
+.claim { margin: .7rem 0 0; color: var(--muted); font-size: .95rem; max-width: 34rem; }
+.claim span { display: block; }
+.stamp { margin: 0; font-family: var(--font-mono); font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+/* ——— lepljiva vrstica ——— */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
+.bar-in { display: grid; gap: .6rem; padding-block: .6rem .6rem; }
+.filters { display: flex; flex-wrap: wrap; gap: .4rem .5rem; align-items: center; }
+.tg { font: inherit; font-size: .9rem; display: inline-flex; align-items: baseline; gap: .4rem; padding: .32rem .6rem .34rem; cursor: pointer;
+  border: 1px solid var(--rule); background: var(--paper); color: var(--ink); }
+.tg[aria-pressed="false"] { background: transparent; color: var(--muted); text-decoration: line-through; text-decoration-color: var(--muted); }
+.tg .sw { width: .7rem; height: .7rem; background: var(--c); align-self: center; }
+.tg[aria-pressed="false"] .sw { background: transparent; outline: 1.5px solid var(--c); outline-offset: -1.5px; }
+.tg small { font-family: var(--font-mono); font-size: .7rem; color: var(--muted); }
+.tg .n { font-family: var(--font-mono); font-size: .75rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.tg.side { font-family: var(--font-mono); font-weight: 600; font-size: .8rem; }
+.tg.reg { font-size: .8rem; }
+.tg.reg[aria-pressed="false"] { text-decoration: none; }
+.tg.reg[aria-pressed="false"]::before { content: "+"; font-family: var(--font-mono); font-weight: 600; }
+.gap { flex: 1 1 0; }
+.jump { display: inline-flex; align-items: center; gap: .45rem; font-family: var(--font-mono); font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; }
+.jump input { font: inherit; font-family: var(--font-mono); font-size: .85rem; letter-spacing: 0; color: var(--ink); background: var(--paper); border: 1px solid var(--ink); border-radius: 0; padding: .28rem .4rem; }
+
+/* ——— VU meter ——— */
+.meter-head { display: flex; justify-content: space-between; gap: 1rem; font-family: var(--font-mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.readout { color: var(--ink); font-weight: 600; white-space: nowrap; }
+.months { position: relative; height: .95rem; margin-top: .15rem; font-family: var(--font-mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); overflow: hidden; }
+.months span { position: absolute; top: 0; padding-left: 3px; border-left: 1px solid var(--muted); white-space: nowrap; line-height: 1; }
+.panel { background: var(--panel); border: 1px solid var(--panel-edge); padding: 5px 3px 4px; }
+.strip { display: grid; grid-template-columns: repeat(var(--n, 92), minmax(0, 1fr)); height: 46px; cursor: ew-resize; touch-action: none; user-select: none; -webkit-user-select: none; }
+.col { display: flex; flex-direction: column-reverse; gap: 2px; padding: 0 1px; position: relative; }
+.col.we { background: var(--panel-we); }
+.col.td::before { content: ""; position: absolute; left: -1px; top: -5px; bottom: -4px; width: 2px; background: var(--panel-ink); opacity: .55; }
+.col.cur::after { content: ""; position: absolute; inset: -5px -1px -4px; outline: 2px solid var(--panel-ink); }
+.led { flex: 1 1 0; min-height: 0; background: var(--led-off); border-radius: 1px; }
+.led.g { background: var(--led-g); box-shadow: 0 0 5px rgb(60 212 106 / .45); }
+.led.o { background: var(--led-o); box-shadow: 0 0 5px rgb(255 154 31 / .5); }
+.led.r { background: var(--led-r); box-shadow: 0 0 6px rgb(255 69 69 / .6); }
+.strip.boot .led.on { animation: led-in .22s ease-out backwards; animation-delay: calc(var(--c) * 4ms + var(--k) * 55ms); }
+@keyframes led-in { from { background: var(--led-off); box-shadow: none; } }
+.scale { display: flex; gap: .9rem; flex-wrap: wrap; font-family: var(--font-mono); font-size: .64rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: .3rem; }
+.scale i { display: inline-block; width: .55rem; height: .55rem; margin-right: .3rem; vertical-align: -.05em; border-radius: 1px; }
+.scale .g { background: var(--led-g); } .scale .o { background: var(--led-o); } .scale .r { background: var(--led-r); }
+
+/* ——— seznam ——— */
+#list { padding-block: 0 2rem; }
+.month { display: flex; align-items: baseline; gap: .8rem; padding-block: 2.2rem .6rem; scroll-margin-top: calc(var(--bar-h) + 8px); }
+.month:first-child { padding-top: 1.2rem; }
+.month h2 { margin: 0; font-family: var(--font-display); font-stretch: 62%; font-weight: 900; font-size: clamp(2rem, 6vw, 3.4rem); line-height: .9; text-transform: uppercase; }
+.month span { font-family: var(--font-mono); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.week { display: flex; justify-content: flex-end; border-top: 2px solid var(--rule); margin-top: .4rem; }
+.week span { font-family: var(--font-mono); font-size: .64rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); padding-top: .2rem; }
+
+.day { display: grid; grid-template-columns: 8.6rem minmax(0, 1fr); gap: .2rem 1.4rem; padding-block: 1rem .9rem; border-top: 1px solid var(--rule); scroll-margin-top: calc(var(--bar-h) + 8px); }
+.week + .day, .month + .day { border-top: 0; }
+.date { display: flex; gap: .55rem; align-items: flex-start; }
+.dnum { font-family: var(--font-display); font-stretch: 62%; font-weight: 850; font-size: 4.3rem; line-height: .78; font-variant-numeric: tabular-nums; min-width: 2ch; }
+.dmeta { font-family: var(--font-mono); font-size: .74rem; line-height: 1.4; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); padding-top: .1rem; }
+.dmeta b { color: var(--ink); font-weight: 600; }
+.dmeta .cnt { display: block; margin-top: .35rem; text-transform: none; letter-spacing: 0; }
+.day.today .dnum { background: var(--ink); color: var(--bg); padding: .1em .08em 0; }
+.day.today .dmeta b:first-child { color: var(--bg); background: var(--ink); padding: 0 .25em; }
+.evs { list-style: none; margin: 0; padding: 0; display: grid; gap: .1rem; min-width: 0; }
+.ev { display: grid; grid-template-columns: 3.5rem .75rem minmax(0, 1fr); gap: 0 .65rem; padding-block: .4rem; align-items: baseline; }
+.ev + .ev { border-top: 1px dashed var(--rule); }
+.ev time { font-family: var(--font-mono); font-weight: 500; font-size: .95rem; font-variant-numeric: tabular-nums; }
+.ev .mark { width: .75rem; height: .75rem; background: var(--c); align-self: start; margin-top: .35rem; }
+.ev .body { min-width: 0; }
+.ev .title { font-weight: 650; font-size: 1.13rem; line-height: 1.22; text-decoration: none; overflow-wrap: anywhere; }
+.ev a.title:hover { text-decoration: underline; text-decoration-color: var(--c); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.ev .sub { margin: .12rem 0 0; color: var(--muted); font-size: .93rem; overflow-wrap: anywhere; }
+.ev .meta { margin: .3rem 0 0; display: flex; flex-wrap: wrap; gap: .2rem .6rem; align-items: baseline; font-family: var(--font-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.ev .venue { color: var(--ink); font-weight: 600; }
+.ev .side { border: 1px solid var(--muted); padding: 0 .25em; line-height: 1.3; }
+.ev .catw { color: var(--c); font-weight: 600; }
+.ev .price { color: var(--ink); text-transform: none; letter-spacing: 0; font-variant-numeric: tabular-nums; }
+.ev .gratis { background: var(--ink); color: var(--bg); font-weight: 600; padding: .05em .4em; }
+.ev.reg .title { font-weight: 500; }
+.none { margin: .2rem 0 0; color: var(--muted); font-size: .95rem; }
+
+.free { display: flex; gap: .8rem; align-items: baseline; padding-block: .45rem; border-top: 1px solid var(--rule); font-family: var(--font-mono); font-size: .74rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); scroll-margin-top: calc(var(--bar-h) + 8px); }
+.week + .free, .month + .free { border-top: 0; }
+.free .fd { min-width: 8.6rem; color: var(--ink); }
+.free .fl::before { content: ""; display: inline-block; width: 1.6rem; border-top: 1px dotted var(--muted); vertical-align: .3em; margin-right: .5rem; }
+
+.horizon { margin-top: 2rem; padding: 1.2rem 0 0; border-top: 2px solid var(--ink); max-width: 42rem; }
+.horizon h2 { margin: 0 0 .4rem; font-family: var(--font-display); font-stretch: 62%; font-weight: 900; font-size: 2rem; text-transform: uppercase; line-height: 1; }
+.horizon p { margin: 0 0 .6rem; color: var(--muted); }
+
+.flash { animation: flash 1.6s ease-out; }
+@keyframes flash { 0%, 30% { background: var(--wash); } 100% { background: transparent; } }
+
+/* ——— viri ——— */
+.sources { padding-block: 1.6rem 3rem; border-top: 2px solid var(--ink); }
+.sources h2 { margin: 0 0 .4rem; font-family: var(--font-mono); font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+.sources p { margin: 0; color: var(--muted); max-width: 70ch; font-size: .92rem; line-height: 1.6; }
+.sources a { color: var(--ink); text-decoration-color: var(--rule); text-underline-offset: 3px; }
+.sources a.stale { color: var(--muted); text-decoration-style: dotted; }
+
+@media (max-width: 640px) {
+  .day { grid-template-columns: minmax(0, 1fr); gap: .5rem; }
+  .date { align-items: flex-end; }
+  .dnum { font-size: 3.3rem; }
+  .ev { grid-template-columns: 3.2rem .7rem minmax(0, 1fr); gap: 0 .5rem; }
+  .free .fd { min-width: 0; }
+  .gap { display: none; }
+  .tg small { display: none; }
+  .col { padding: 0 .5px; gap: 1px; }
+}
+@media (prefers-reduced-motion: reduce) { .flash, .strip.boot .led.on { animation: none; } }
+</style>
+
+<header class="mast wrap">
+  <div>
+    <h1 class="logo"><span>Goriški</span><span>napovednik</span></h1>
+    <p class="claim">Koncerti, predstave in projekcije v Novi Gorici in Gorici, od danes naprej.
+      <span lang="it">Concerti, spettacoli e proiezioni a Gorizia e Nova Gorica, da oggi in poi.</span></p>
+  </div>
+  <p class="stamp" id="stamp"></p>
+</header>
+
+<div class="bar" id="bar">
+  <div class="wrap bar-in">
+    <div class="filters" role="group" aria-label="Filtri">
+      <button class="tg" data-cat="glasba" aria-pressed="true"><span class="sw"></span>Glasba <small lang="it">musica</small> <span class="n"></span></button>
+      <button class="tg" data-cat="gledalisce" aria-pressed="true"><span class="sw"></span>Gledališče <small lang="it">teatro</small> <span class="n"></span></button>
+      <button class="tg" data-cat="film" aria-pressed="true"><span class="sw"></span>Film <small lang="it">cinema</small> <span class="n"></span></button>
+      <button class="tg side" data-side="NG" aria-pressed="true" title="Nova Gorica, Solkan, Šempeter-Vrtojba">NG</button>
+      <button class="tg side" data-side="GO" aria-pressed="true" title="Gorizia">GO</button>
+      <button class="tg reg" id="reg" aria-pressed="false" title="Redni spored kina Kinemax, objavljen le dan ali dva vnaprej">Redni kino spored</button>
+      <span class="gap"></span>
+      <label class="jump">Na datum <input type="date" id="jump-date"></label>
+    </div>
+    <div>
+      <div class="meter-head"><span>Koliko se dogaja · klikni ali povleci</span><span class="readout" id="readout"></span></div>
+      <div class="months" id="months" aria-hidden="true"></div>
+      <div class="panel"><div class="strip" id="strip" role="slider" tabindex="0" aria-label="Koliko dogodkov je posamezen dan"></div></div>
+      <div class="scale" aria-hidden="true"><span><i class="g"></i>1–2 dogodka</span><span><i class="o"></i>3–4</span><span><i class="r"></i>5 ali več</span></div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="list"></main>
+
+<footer class="wrap sources">
+  <h2>Viri</h2>
+  <p id="src-list"></p>
+</footer>
+
+<script>
+const EVENTS = /*__EVENTS__*/[];
+const SOURCES = /*__SOURCES__*/[];
+const HARVEST = "/*__HARVEST__*/";
+const SPAN = 92;
+const LEVELS = 6; // segmenti merilnika: 1–2 zelena, 3–4 oranžna, 5–6 rdeča
+
+const SL_WD = ["ned", "pon", "tor", "sre", "čet", "pet", "sob"];
+const SL_WD_FULL = ["nedelja", "ponedeljek", "torek", "sreda", "četrtek", "petek", "sobota"];
+const IT_WD = ["dom", "lun", "mar", "mer", "gio", "ven", "sab"];
+const SL_MON = ["jan", "feb", "mar", "apr", "maj", "jun", "jul", "avg", "sep", "okt", "nov", "dec"];
+const IT_MON = ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"];
+const SL_MON_FULL = ["januar", "februar", "marec", "april", "maj", "junij", "julij", "avgust", "september", "oktober", "november", "december"];
+const IT_MON_FULL = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+const CATS = { glasba: "glasba", gledalisce: "gledališče", film: "film" };
+
+const d0 = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d, 12); };
+const iso = t => t.getFullYear() + "-" + String(t.getMonth() + 1).padStart(2, "0") + "-" + String(t.getDate()).padStart(2, "0");
+const add = (t, n) => { const x = new Date(t); x.setDate(x.getDate() + n); return x; };
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const short = t => `${SL_WD[t.getDay()]} ${t.getDate()}. ${t.getMonth() + 1}.`;
+function plural(n) {
+  const m = n % 100;
+  if (m === 1) return n + " dogodek";
+  if (m === 2) return n + " dogodka";
+  if (m === 3 || m === 4) return n + " dogodki";
+  return n + " dogodkov";
+}
+function isoWeek(t) {
+  const d = new Date(Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()));
+  const day = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - day);
+  const y0 = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  return Math.ceil(((d - y0) / 864e5 + 1) / 7);
+}
+
+const realToday = iso(new Date());
+const END = iso(add(d0(HARVEST), SPAN - 1));
+const START = realToday > HARVEST && realToday <= END ? realToday : HARVEST;
+const DAYS = [];
+for (let t = d0(START); iso(t) <= END; t = add(t, 1)) DAYS.push(iso(t));
+
+const state = { cats: new Set(Object.keys(CATS)), sides: new Set(["NG", "GO"]), regular: false, current: START };
+const $ = id => document.getElementById(id);
+const list = $("list"), strip = $("strip"), bar = $("bar");
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function shown(e) {
+  if (e.regular && !state.regular) return false;
+  return state.cats.has(e.cat) && state.sides.has(e.city) && e.date >= START && e.date <= END;
+}
+function byDay() {
+  const m = new Map();
+  for (const e of EVENTS) {
+    if (!shown(e)) continue;
+    if (!m.has(e.date)) m.set(e.date, []);
+    m.get(e.date).push(e);
+  }
+  for (const a of m.values()) a.sort((x, y) => (!!x.regular - !!y.regular) || (x.time || "99").localeCompare(y.time || "99"));
+  return m;
+}
+const countOn = (m, d) => (m.get(d) || []).filter(e => !e.regular).length;
+
+function evHTML(e) {
+  const t = e.url
+    ? `<a class="title" href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>`
+    : `<span class="title">${esc(e.title)}</span>`;
+  const price = e.free ? `<span class="gratis">prost vstop</span>` : e.price ? `<span class="price">${esc(e.price)}</span>` : "";
+  return `<li class="ev${e.regular ? " reg" : ""}" data-cat="${e.cat}">
+    <time>${e.time ? esc(e.time) : "—"}</time><span class="mark" aria-hidden="true"></span>
+    <div class="body">${t}
+      ${e.sub ? `<p class="sub">${esc(e.sub)}</p>` : ""}
+      <p class="meta"><span class="venue">${esc(e.venue)}</span><span class="side" title="${e.city === "NG" ? "Nova Gorica" : "Gorizia"}">${e.city}</span><span class="catw">${CATS[e.cat]}</span>${price}</p>
+    </div></li>`;
+}
+function dayHTML(d, evs) {
+  const t = d0(d), today = d === realToday;
+  const n = evs.filter(e => !e.regular).length;
+  return `<section class="day${today ? " today" : ""}" data-d="${d}">
+    <div class="date"><span class="dnum">${t.getDate()}</span>
+      <span class="dmeta">${today ? "<b>danes</b> oggi<br>" : ""}<b>${SL_WD[t.getDay()]}</b> ${IT_WD[t.getDay()]}<br>${SL_MON[t.getMonth()]} · ${IT_MON[t.getMonth()]}
+      ${n ? `<span class="cnt">${plural(n)}</span>` : ""}</span></div>
+    ${evs.length ? `<ol class="evs">${evs.map(evHTML).join("")}</ol>` : `<p class="none">Ni napovedanih dogodkov.</p>`}
+  </section>`;
+}
+function freeHTML(run) {
+  const a = d0(run[0]), b = d0(run[run.length - 1]);
+  const label = run.length === 1 ? short(a)
+    : a.getMonth() === b.getMonth() ? `${SL_WD[a.getDay()]} ${a.getDate()}. – ${SL_WD[b.getDay()]} ${b.getDate()}. ${b.getMonth() + 1}.`
+    : `${short(a)} – ${short(b)}`;
+  return `<div class="free" data-d="${run.join(" ")}"><span class="fd">${label}</span><span class="fl">nič napovedanega</span></div>`;
+}
+
+function renderList() {
+  const m = byDay(), out = [];
+  let run = [], lastMonth = null;
+  const flush = () => { if (run.length) { out.push(freeHTML(run)); run = []; } };
+  for (const d of DAYS) {
+    const t = d0(d);
+    if (t.getMonth() !== lastMonth) {
+      flush();
+      out.push(`<div class="month"><h2>${SL_MON_FULL[t.getMonth()]}</h2><span lang="it">${IT_MON_FULL[t.getMonth()]} ${t.getFullYear()}</span></div>`);
+      lastMonth = t.getMonth();
+    } else if (t.getDay() === 1) {
+      flush();
+      out.push(`<div class="week"><span>${isoWeek(t)}. teden</span></div>`);
+    }
+    const evs = m.get(d);
+    if (evs || d === START) { flush(); out.push(dayHTML(d, evs || [])); }
+    else run.push(d);
+  }
+  flush();
+  out.push(`<div class="horizon"><h2>Konec obzorja</h2>
+    <p>Napovednik gleda tri mesece naprej, do ${d0(END).getDate()}. ${d0(END).getMonth() + 1}. ${d0(END).getFullYear()}.</p>
+    <p>Prizorišča objavljajo program sproti, zato se prihodnji tedni še polnijo. SNG je na primer doslej objavil le oktober.</p></div>`);
+  list.innerHTML = out.join("");
+}
+
+function renderStrip(boot = false) {
+  const m = byDay(), n = DAYS.length;
+  strip.style.setProperty("--n", n);
+  strip.innerHTML = DAYS.map((d, i) => {
+    const wd = d0(d).getDay(), lit = Math.min(countOn(m, d), LEVELS);
+    const leds = Array.from({ length: LEVELS }, (_, k) => {
+      const col = k < 2 ? "g" : k < 4 ? "o" : "r";
+      return `<i class="led${k < lit ? " on " + col : ""}" style="--k:${k};--c:${i}"></i>`;
+    }).join("");
+    return `<span class="col${wd === 0 || wd === 6 ? " we" : ""}${d === realToday ? " td" : ""}${d === state.current ? " cur" : ""}">${leds}</span>`;
+  }).join("");
+  $("months").innerHTML = DAYS.map((d, i) => {
+    const t = d0(d);
+    return i === 0 || t.getDate() === 1 ? `<span style="left:${(i / n) * 100}%">${SL_MON_FULL[t.getMonth()]}</span>` : "";
+  }).join("");
+  if (boot && !reduced) {
+    strip.classList.add("boot");
+    setTimeout(() => strip.classList.remove("boot"), 1400);
+  }
+}
+
+function renderCounts() {
+  for (const b of document.querySelectorAll(".tg[data-cat]")) {
+    const c = b.dataset.cat;
+    b.querySelector(".n").textContent = EVENTS.filter(e => e.cat === c && !e.regular && state.sides.has(e.city) && e.date >= START && e.date <= END).length;
+  }
+}
+
+function setCurrent(d) {
+  if (!d) return;
+  state.current = d;
+  const i = DAYS.indexOf(d);
+  strip.querySelector(".col.cur")?.classList.remove("cur");
+  strip.children[i]?.classList.add("cur");
+  const n = countOn(byDay(), d), t = d0(d);
+  $("readout").textContent = `${SL_WD_FULL[t.getDay()]} ${t.getDate()}. ${t.getMonth() + 1}. · ${n ? plural(n) : "nič napovedanega"}`;
+  strip.setAttribute("aria-valuemin", 0);
+  strip.setAttribute("aria-valuemax", DAYS.length - 1);
+  strip.setAttribute("aria-valuenow", i);
+  strip.setAttribute("aria-valuetext", $("readout").textContent);
+}
+
+function findBlock(d) { return list.querySelector(`[data-d~="${d}"]`); }
+function jumpTo(d, { instant = false, flash = false } = {}) {
+  const el = findBlock(d);
+  if (!el) return;
+  el.scrollIntoView({ behavior: instant || reduced ? "auto" : "smooth", block: "start" });
+  if (flash) { el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); }
+  setCurrent(d);
+  holdSpy = performance.now() + (instant ? 120 : 900);
+}
+
+let holdSpy = 0, ticking = false;
+function spy() {
+  if (performance.now() < holdSpy) return;
+  const y = bar.getBoundingClientRect().bottom + 6;
+  for (const el of list.querySelectorAll("[data-d]")) {
+    if (el.getBoundingClientRect().bottom > y) {
+      const ds = el.dataset.d.split(" ");
+      if (!ds.includes(state.current)) setCurrent(ds[0]);
+      return;
+    }
+  }
+}
+addEventListener("scroll", () => {
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(() => { ticking = false; spy(); });
+}, { passive: true });
+
+function rerender() {
+  const anchored = list.getBoundingClientRect().top < bar.offsetHeight + 10;
+  renderList(); renderStrip(); renderCounts();
+  if (anchored) jumpTo(state.current, { instant: true }); else setCurrent(state.current);
+}
+
+// merilnik: klik in vlečenje
+const idxAt = x => { const r = strip.getBoundingClientRect(); return Math.max(0, Math.min(DAYS.length - 1, Math.floor(((x - r.left) / r.width) * DAYS.length))); };
+let scrub = false;
+strip.addEventListener("pointerdown", e => { scrub = true; strip.setPointerCapture(e.pointerId); jumpTo(DAYS[idxAt(e.clientX)], { instant: true }); });
+strip.addEventListener("pointermove", e => { if (scrub) jumpTo(DAYS[idxAt(e.clientX)], { instant: true }); });
+strip.addEventListener("pointerup", () => { scrub = false; });
+strip.addEventListener("pointercancel", () => { scrub = false; });
+strip.addEventListener("keydown", e => {
+  const step = { ArrowRight: 1, ArrowLeft: -1, PageDown: 7, PageUp: -7 }[e.key];
+  if (!step) return;
+  e.preventDefault();
+  const i = Math.max(0, Math.min(DAYS.length - 1, DAYS.indexOf(state.current) + step));
+  jumpTo(DAYS[i], { instant: true });
+});
+
+// filtri
+for (const b of document.querySelectorAll(".tg[data-cat], .tg[data-side]")) {
+  b.addEventListener("click", () => {
+    const set = b.dataset.cat ? state.cats : state.sides, key = b.dataset.cat || b.dataset.side;
+    const on = b.getAttribute("aria-pressed") === "true";
+    if (on && set.size === 1) return; // vsaj eno stikalo ostane prižgano
+    on ? set.delete(key) : set.add(key);
+    b.setAttribute("aria-pressed", String(!on));
+    rerender();
+  });
+}
+$("reg").addEventListener("click", e => {
+  state.regular = !state.regular;
+  e.currentTarget.setAttribute("aria-pressed", String(state.regular));
+  rerender();
+});
+
+// skok na datum
+const ji = $("jump-date");
+ji.min = START; ji.max = END;
+ji.addEventListener("change", () => { if (ji.value >= START && ji.value <= END) jumpTo(ji.value, { flash: true }); });
+
+// viri
+const hv = d0(HARVEST);
+$("stamp").textContent = `Posodobljeno ${hv.getDate()}. ${hv.getMonth() + 1}. ${hv.getFullYear()}`;
+$("src-list").innerHTML = "Dogodke vsako noč samodejno poberemo s teh strani: " +
+  SOURCES.filter(s => s.url).map(s => s.stale
+    ? `<a class="stale" href="${esc(s.url)}" target="_blank" rel="noopener" title="Zadnja uspešna posodobitev ${esc(s.stale)}">${esc(s.name)}</a>`
+    : `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(", ") + ".";
+
+new ResizeObserver(() => document.documentElement.style.setProperty("--bar-h", bar.offsetHeight + "px")).observe(bar);
+renderList(); renderStrip(true); renderCounts(); setCurrent(START);
+</script>
