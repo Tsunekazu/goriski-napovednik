@@ -1,29 +1,5 @@
 [
  {
-  "date": "2026-10-09",
-  "time": "17:30",
-  "title": "Tafiti (2026, sinh.), 6+",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "kulturnidom-ng.si",
-  "sub": "Filmski vrtiljak · Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/tafiti-2026-sinh-6/",
-  "price": "4,50–5,50 €"
- },
- {
-  "date": "2026-10-09",
-  "time": "20:15",
-  "title": "Mlade matere (2025), 15+",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "kulturnidom-ng.si",
-  "sub": "Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/mlade-matere-2025-15/",
-  "price": "4,50–5,50 €"
- },
- {
   "date": "2026-10-10",
   "time": "20:15",
   "title": "Žejtune (2026)",

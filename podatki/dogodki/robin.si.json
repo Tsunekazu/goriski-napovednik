@@ -1,35 +1,5 @@
 [
  {
-  "date": "2026-10-09",
-  "time": "17:30",
-  "title": "Tafiti",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-tafiti/"
- },
- {
-  "date": "2026-10-09",
-  "time": "20:15",
-  "title": "Mlade matere",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-mlade-matere/"
- },
- {
-  "date": "2026-10-09",
-  "time": "20:30",
-  "title": "Agenti",
-  "venue": "Kulturni dom Gorica",
-  "city": "GO",
-  "cat": "gledalisce",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-predstava-agenti/"
- },
- {
   "date": "2026-10-10",
   "time": "20:15",
   "title": "Zeltune",
