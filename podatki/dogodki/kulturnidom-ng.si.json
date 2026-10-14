@@ -1,29 +1,5 @@
 [
  {
-  "date": "2026-10-13",
-  "time": "18:00",
-  "title": "Ženske brez filtra 2",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "gledalisce",
-  "src": "kulturnidom-ng.si",
-  "sub": "Velika dvorana",
-  "url": "https://kulturnidom-ng.si/events/zenskebrezfiltra2/",
-  "price": "26–28 €"
- },
- {
-  "date": "2026-10-13",
-  "time": "20:15",
-  "title": "Bridki božič (2026)",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "kulturnidom-ng.si",
-  "sub": "Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/bridki-bozic-2026/",
-  "price": "4,50–5,50 €"
- },
- {
   "date": "2026-10-14",
   "time": "20:00",
   "title": "Pegule",
@@ -523,6 +499,18 @@
  },
  {
   "date": "2026-12-11",
+  "time": "17:30",
+  "title": "Kako je mambo postal velikan (2026, sinh.), 5+",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "kulturnidom-ng.si",
+  "sub": "Filmski vrtiljak · Mala dvorana",
+  "url": "https://kulturnidom-ng.si/events/kako-je-mambo-postal-velikan-2026-sinh-5/",
+  "price": "4,50–5,50 €"
+ },
+ {
+  "date": "2026-12-11",
   "time": "20:15",
   "title": "Sirota (2025)",
   "venue": "Kulturni dom Nova Gorica",
@@ -564,5 +552,17 @@
   "src": "kulturnidom-ng.si",
   "sub": "Mala dvorana",
   "url": "https://kulturnidom-ng.si/events/nic-ni-kot-se-zdi-2026/"
+ },
+ {
+  "date": "2026-12-18",
+  "time": "20:15",
+  "title": "Presveto srce – njegovemu kraljestvu ne bo konca (2026)",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "kulturnidom-ng.si",
+  "sub": "Mala dvorana",
+  "url": "https://kulturnidom-ng.si/events/presveto-srce-njegovemu-kraljestvu-ne-bo-konca-2026/",
+  "price": "4,50–5,50 €"
  }
 ]
