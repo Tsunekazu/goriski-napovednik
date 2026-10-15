@@ -33,6 +33,17 @@
   "price": "12–15 €"
  },
  {
+  "date": "2026-10-31",
+  "time": "21:00",
+  "title": "BOOYA! Halloween žurkica",
+  "venue": "Mostovna",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "mostovna.com",
+  "url": "https://www.mostovna.com/dogodki/booya-halloween-urkica",
+  "price": "10 €"
+ },
+ {
   "date": "2026-11-18",
   "time": "20:30",
   "title": "The Howlers",

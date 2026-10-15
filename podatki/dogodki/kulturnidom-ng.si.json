@@ -1,17 +1,5 @@
 [
  {
-  "date": "2026-10-14",
-  "time": "20:00",
-  "title": "Pegule",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "gledalisce",
-  "src": "kulturnidom-ng.si",
-  "sub": "Velika dvorana",
-  "url": "https://kulturnidom-ng.si/events/pegule-3/",
-  "price": "25 €"
- },
- {
   "date": "2026-10-16",
   "time": "17:30",
   "title": "Bacek jon 3: skrivnost šotnega dola (2026, sinh.), 6+",
@@ -287,7 +275,7 @@
   "city": "NG",
   "cat": "glasba",
   "src": "kulturnidom-ng.si",
-  "sub": "46. Glasbeni abonma | 2. koncert · Velika dvorana – 46. Glasbeni abonma | 2. koncert",
+  "sub": "46. Glasbeni abonma | 2. koncert · Velika dvorana",
   "url": "https://kulturnidom-ng.si/events/ensemble-dissonance-in-lana-trotovsek-violina/",
   "price": "10–18 €"
  },
@@ -467,12 +455,12 @@
  {
   "date": "2026-12-07",
   "time": "20:15",
-  "title": "MNA3 Trio in Jan Krmelj, besedilni vložki",
+  "title": "MNA3 Trio in Jan Krmelj, ibesedilni vložki",
   "venue": "Kulturni dom Nova Gorica",
   "city": "NG",
   "cat": "glasba",
   "src": "kulturnidom-ng.si",
-  "sub": "46. Glasbeni abonma | 3. koncert · Velika dvorana – 46. Glasbeni abonma | 3. koncert",
+  "sub": "46. Glasbeni abonma | 3. koncert · Velika dvorana",
   "url": "https://kulturnidom-ng.si/events/mna3-trio-in-jan-krmelj-besedilni-vlozki/"
  },
  {
@@ -485,6 +473,18 @@
   "src": "kulturnidom-ng.si",
   "sub": "Velika dvorana",
   "url": "https://kulturnidom-ng.si/events/alpski-ranko-7/"
+ },
+ {
+  "date": "2026-12-09",
+  "time": "19:30",
+  "title": "Turneja Moč besede",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "kulturnidom-ng.si",
+  "sub": "Velika dvorana",
+  "url": "https://kulturnidom-ng.si/events/turneja-moc-besede/",
+  "price": "16–30 €"
  },
  {
   "date": "2026-12-10",

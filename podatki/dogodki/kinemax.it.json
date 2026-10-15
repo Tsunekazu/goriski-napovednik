@@ -1,17 +1,5 @@
 [
  {
-  "date": "2026-10-14",
-  "time": null,
-  "title": "Redni spored",
-  "venue": "Kinemax Gorizia",
-  "city": "GO",
-  "cat": "film",
-  "src": "kinemax.it",
-  "sub": "L'albero di molto lontano (the magic faraway tree) 17:30 · L'estranea 17:30, 20:20 · Digger 17:50 · Balcanica 20:15 · Naza 20:30",
-  "url": "https://www.kinemax.it/orari.php",
-  "regular": true
- },
- {
   "date": "2026-10-15",
   "time": null,
   "title": "Redni spored",
@@ -67,7 +55,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Frankie e le creature dimenticate (stitch head) 17:30 · Zustissia 17:30, 20:30 · L'estranea 17:40 · Naza 19:10 · Trainspotting -30-ANNIVERSARIO ( evento) 20:20 · Fatherland 20:40",
+  "sub": "Frankie e le creature dimenticate (stitch head) 17:30 · Zustissia 17:30, 20:30 · L'estranea 17:40 · Naza 19:10 · TRAINSPOTING-30 anniversario (evento ) o.v 20:20 · Fatherland 20:40",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -79,7 +67,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Frankie e le creature dimenticate (stitch head) 17:30 · Zustissia 17:30 · L'estranea 17:40 · Naza 19:10 · Trainspotting -30-ANNIVERSARIO ( evento) 20:20 · Fatherland 20:40",
+  "sub": "Frankie e le creature dimenticate (stitch head) 17:30 · Zustissia 17:30 · L'estranea 17:40 · Naza 19:10 · TRAINSPOTING-30 anniversario (evento ) o.v 20:20 · Fatherland 20:40",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -91,7 +79,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Frankie e le creature dimenticate (stitch head) 17:30 · Zustissia 17:30, 20:30 · L'estranea 17:40 · Naza 19:10 · Trainspotting -30-ANNIVERSARIO ( evento) 20:20 · Fatherland 20:40",
+  "sub": "Frankie e le creature dimenticate (stitch head) 17:30 · Zustissia 17:30, 20:30 · L'estranea 17:40 · Naza 19:10 · TRAINSPOTING-30 anniversario (evento ) o.v 20:20 · Fatherland 20:40",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
