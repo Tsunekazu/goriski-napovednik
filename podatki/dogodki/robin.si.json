@@ -1,5 +1,45 @@
 [
  {
+  "date": "2026-10-16",
+  "time": "17:30",
+  "title": "Bacek Jon 3: Skrivnost Šotnega dola",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-bacek-jon-3-skrivnost-sotnega-dola/"
+ },
+ {
+  "date": "2026-10-16",
+  "time": "19:00",
+  "title": "Klape Semikanta",
+  "venue": "Mladinski center",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/vrtojba-mladinski-center-koncert-klape-semikanta/"
+ },
+ {
+  "date": "2026-10-16",
+  "time": "20:15",
+  "title": "Preklinjam",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-preklinjam/"
+ },
+ {
+  "date": "2026-10-16",
+  "time": "20:30",
+  "title": "Komorni orkester Furlanije - Julijske krajine",
+  "venue": "KC Lojze Bratuž",
+  "city": "GO",
+  "cat": "glasba",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/gorica-kc-lojze-bratuz-koncert-komorni-orkester-furlanije-julijske-krajine/"
+ },
+ {
   "date": "2026-10-19",
   "time": "20:30",
   "title": "Predvajanje nemega filma For Heaven Sake (1926) ob spremljavi orkestra Zerorchestra (Italija)",
@@ -8,5 +48,15 @@
   "cat": "film",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-predvajanje-nemega-filma-for-heaven-sake-1926-ob-spremljavi-orkestra-zerorchestra-italija/"
+ },
+ {
+  "date": "2026-10-20",
+  "time": "20:15",
+  "title": "Ko te je strah, globoko vdihneš in se nasmehneš",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-ko-te-je-strah-globoko-vdihnes-in-se-nasmehnes/"
  }
 ]
