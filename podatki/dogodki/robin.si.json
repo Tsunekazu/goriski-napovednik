@@ -1,43 +1,13 @@
 [
  {
-  "date": "2026-10-16",
-  "time": "17:30",
-  "title": "Bacek Jon 3: Skrivnost Šotnega dola",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-bacek-jon-3-skrivnost-sotnega-dola/"
- },
- {
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "time": "19:00",
-  "title": "Klape Semikanta",
-  "venue": "Mladinski center",
+  "title": "MePZ Amorvincit",
+  "venue": "velika dvorana MONG",
   "city": "NG",
   "cat": "glasba",
   "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/vrtojba-mladinski-center-koncert-klape-semikanta/"
- },
- {
-  "date": "2026-10-16",
-  "time": "20:15",
-  "title": "Preklinjam",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-preklinjam/"
- },
- {
-  "date": "2026-10-16",
-  "time": "20:30",
-  "title": "Komorni orkester Furlanije - Julijske krajine",
-  "venue": "KC Lojze Bratuž",
-  "city": "GO",
-  "cat": "glasba",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/gorica-kc-lojze-bratuz-koncert-komorni-orkester-furlanije-julijske-krajine/"
+  "url": "https://www.robin.si/dogodek/nova-gorica-velika-dvorana-mong-koncert-mepz-amorvincit/"
  },
  {
   "date": "2026-10-19",
@@ -58,5 +28,15 @@
   "cat": "film",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-ko-te-je-strah-globoko-vdihnes-in-se-nasmehnes/"
+ },
+ {
+  "date": "2026-10-22",
+  "time": null,
+  "title": "Oktober jazz",
+  "venue": "Goriška Brda",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/98287/"
  }
 ]

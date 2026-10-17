@@ -1,29 +1,5 @@
 [
  {
-  "date": "2026-10-16",
-  "time": "17:30",
-  "title": "Bacek jon 3: skrivnost šotnega dola (2026, sinh.), 6+",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "kulturnidom-ng.si",
-  "sub": "Filmski vrtiljak · Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/bacek-jon-3-skrivnost-sotnega-dola-2026-sinh-7/",
-  "price": "4,50–5,50 €"
- },
- {
-  "date": "2026-10-16",
-  "time": "20:15",
-  "title": "Preklinjam (2025), 12+",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "kulturnidom-ng.si",
-  "sub": "Filmsko gledališče – za abonma in izven · Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/preklinjam-2025-12/",
-  "price": "4,50–5,50 €"
- },
- {
   "date": "2026-10-20",
   "time": "20:15",
   "title": "Ko te je strah, globoko vdihneš in se nasmehneš (2025), 13+",
@@ -420,6 +396,18 @@
   "url": "https://kulturnidom-ng.si/events/digger-2026/"
  },
  {
+  "date": "2026-12-01",
+  "time": "20:15",
+  "title": "Keltska utopija (2025)",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "kulturnidom-ng.si",
+  "sub": "Mala dvorana",
+  "url": "https://kulturnidom-ng.si/events/keltska-utopija-2025/",
+  "price": "4,50–5,50 €"
+ },
+ {
   "date": "2026-12-03",
   "time": "19:00",
   "title": "TV Poper v živo",
@@ -429,6 +417,18 @@
   "src": "kulturnidom-ng.si",
   "sub": "Velika dvorana",
   "url": "https://kulturnidom-ng.si/events/tv-poper-v-zivo-2/"
+ },
+ {
+  "date": "2026-12-04",
+  "time": "17:30",
+  "title": "Mala Amélie (2025, sinh.), 9+",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "kulturnidom-ng.si",
+  "sub": "Filmski vrtiljak · Mala dvorana",
+  "url": "https://kulturnidom-ng.si/events/mala-amelie-2025-sinh-9/",
+  "price": "4,50–5,50 €"
  },
  {
   "date": "2026-12-04",
@@ -455,7 +455,7 @@
  {
   "date": "2026-12-07",
   "time": "20:15",
-  "title": "MNA3 Trio in Jan Krmelj, ibesedilni vložki",
+  "title": "MNA3 Trio in Jan Krmelj, besedilni vložki",
   "venue": "Kulturni dom Nova Gorica",
   "city": "NG",
   "cat": "glasba",
@@ -552,6 +552,18 @@
   "src": "kulturnidom-ng.si",
   "sub": "Mala dvorana",
   "url": "https://kulturnidom-ng.si/events/nic-ni-kot-se-zdi-2026/"
+ },
+ {
+  "date": "2026-12-18",
+  "time": "17:30",
+  "title": "Honey (2024), 12+",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "kulturnidom-ng.si",
+  "sub": "Filmski vrtiljak · Mala dvorana",
+  "url": "https://kulturnidom-ng.si/events/honey-2024-12/",
+  "price": "4,50–5,50 €"
  },
  {
   "date": "2026-12-18",
