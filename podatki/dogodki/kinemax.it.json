@@ -1,17 +1,5 @@
 [
  {
-  "date": "2026-10-17",
-  "time": null,
-  "title": "Redni spored",
-  "venue": "Kinemax Gorizia",
-  "city": "GO",
-  "cat": "film",
-  "src": "kinemax.it",
-  "sub": "L'estranea 15:30, 17:40, 20:20 · Naza 15:30, 19:00 · Frankie e le creature dimenticate (stitch head) 15:45 · Zustissia 17:00, 20:30 · Fatherland 17:30, 19:00, 20:40",
-  "url": "https://www.kinemax.it/orari.php",
-  "regular": true
- },
- {
   "date": "2026-10-18",
   "time": null,
   "title": "Redni spored",
