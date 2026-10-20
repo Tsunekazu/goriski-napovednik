@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-10-19",
-  "time": "20:30",
-  "title": "Predvajanje nemega filma For Heaven Sake (1926) ob spremljavi orkestra Zerorchestra (Italija)",
-  "venue": "Kulturni dom Gorica",
-  "city": "GO",
-  "cat": "film",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-predvajanje-nemega-filma-for-heaven-sake-1926-ob-spremljavi-orkestra-zerorchestra-italija/"
- },
- {
   "date": "2026-10-20",
   "time": "20:15",
   "title": "Ko te je strah, globoko vdihneš in se nasmehneš",
@@ -18,6 +8,16 @@
   "cat": "film",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-ko-te-je-strah-globoko-vdihnes-in-se-nasmehnes/"
+ },
+ {
+  "date": "2026-10-20",
+  "time": null,
+  "title": "Projekcija filmov med 20.10. in 30.10.2026",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-projekcija-filmov-med-20-10-in-30-10-2026/"
  },
  {
   "date": "2026-10-22",
