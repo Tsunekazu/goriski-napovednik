@@ -33,6 +33,17 @@
   "price": "10 €"
  },
  {
+  "date": "2026-11-14",
+  "time": "20:00",
+  "title": "Elvis Jackson, Blame Betty, The Last Supper, Wardogs",
+  "venue": "Mostovna",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "mostovna.com",
+  "url": "https://www.mostovna.com/dogodki/elvis-jackson-blame-betty-the-last-supper-wardogs",
+  "price": "19–25 €"
+ },
+ {
   "date": "2026-11-18",
   "time": "20:30",
   "title": "The Howlers",
