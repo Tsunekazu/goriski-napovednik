@@ -1,27 +1,5 @@
 [
  {
-  "date": "2026-10-22",
-  "time": "20:00",
-  "title": "Konservatorij za glasbo in balet ljubljana presents!",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "glasba",
-  "src": "kulturnidom-ng.si",
-  "sub": "Oktober Jazz · Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/kgbl-presents/"
- },
- {
-  "date": "2026-10-22",
-  "time": "21:00",
-  "title": "Itinera | Ricchardo Chiarion, Sofia Brunello, Camilla Collet",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "glasba",
-  "src": "kulturnidom-ng.si",
-  "sub": "Oktober Jazz · Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/itinera-ricchardo-chiarion-sofia-brunello-camilla-collet/"
- },
- {
   "date": "2026-10-23",
   "time": "20:00",
   "title": "Konservatorij za glasbo giuseppe tartini presents!",

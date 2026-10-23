@@ -1,16 +1,5 @@
 [
  {
-  "date": "2026-10-22",
-  "time": "20:00",
-  "title": "Ženske v temi",
-  "venue": "SNG Nova Gorica",
-  "city": "NG",
-  "cat": "gledalisce",
-  "src": "sng-ng.si",
-  "sub": "Maja Haderlap · Dramatizacija romana · Mali oder",
-  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/zenske-v-temi/"
- },
- {
   "date": "2026-10-23",
   "time": "20:00",
   "title": "Ženske v temi",
@@ -218,6 +207,17 @@
   "src": "sng-ng.si",
   "sub": "Feđa Šehović · Veliki oder",
   "url": "https://www.sng-ng.si/sl/repertoar/drugi-dogodki/kurbe/"
+ },
+ {
+  "date": "2026-11-23",
+  "time": "18:00",
+  "title": "Ko pogledamo stran: sokrivi v tišini?",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Odprti oder za pogovor · Mali oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/drugi-dogodki/ko-pogledamo-stran-sokrivi-v-tisini/"
  },
  {
   "date": "2026-11-23",

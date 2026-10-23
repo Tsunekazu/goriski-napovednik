@@ -66,17 +66,6 @@
   "url": "https://www.teatroverdi.gorizia.it/spettacolo/joy/"
  },
  {
-  "date": "2026-12-11",
-  "time": "20:45",
-  "title": "Totalmente incompatibili",
-  "venue": "Teatro Verdi",
-  "city": "GO",
-  "cat": "gledalisce",
-  "src": "teatroverdi.gorizia.it",
-  "sub": "Grandi Eventi",
-  "url": "https://www.teatroverdi.gorizia.it/spettacolo/totalmente-incompatibili/"
- },
- {
   "date": "2026-12-17",
   "time": "20:45",
   "title": "Fratello sole, sorella luna",
@@ -86,6 +75,17 @@
   "src": "teatroverdi.gorizia.it",
   "sub": "Prosa",
   "url": "https://www.teatroverdi.gorizia.it/spettacolo/fratello-sole-sorella-luna/"
+ },
+ {
+  "date": "2026-12-19",
+  "time": "20:45",
+  "title": "Totalmente incompatibili",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Grandi Eventi",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/totalmente-incompatibili/"
  },
  {
   "date": "2026-12-27",
