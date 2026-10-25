@@ -1,28 +1,5 @@
 [
  {
-  "date": "2026-10-24",
-  "time": "15:00",
-  "title": "Shake Stew: 10th Anniversary Event",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "glasba",
-  "src": "kulturnidom-ng.si",
-  "sub": "Oktober Jazz · Velika dvorana",
-  "url": "https://kulturnidom-ng.si/events/shake-stew-controtempo/"
- },
- {
-  "date": "2026-10-24",
-  "time": "20:15",
-  "title": "Lep in žalosten svet (2025)",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "kulturnidom-ng.si",
-  "sub": "Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/lep-in-zalosten-svet-2025/",
-  "price": "4,50–5,50 €"
- },
- {
   "date": "2026-10-25",
   "time": "15:00",
   "title": "Jazz&wine OF Peace | Artist-in-Residence 2026: Teis Semey",
