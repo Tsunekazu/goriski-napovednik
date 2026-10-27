@@ -9,5 +9,26 @@
   "src": "robin.si",
   "sub": "Stand up komedija",
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-stand-up-komedija-slovenka/"
+ },
+ {
+  "date": "2026-10-30",
+  "time": "20:30",
+  "title": "»Elephant man«",
+  "venue": "Kulturni dom Gorica",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-predstava-elephant-man/"
+ },
+ {
+  "date": "2026-10-31",
+  "time": "21:00",
+  "title": "a tribute to Pink Floyd",
+  "venue": "KC Lojze Bratuž",
+  "city": "GO",
+  "cat": "glasba",
+  "src": "robin.si",
+  "sub": "Five Different Ones",
+  "url": "https://www.robin.si/dogodek/gorica-kc-lojze-bratuz-five-different-ones-a-tribute-to-pink-floyd/"
  }
 ]
