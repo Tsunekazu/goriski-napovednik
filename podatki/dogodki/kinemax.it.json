@@ -1,17 +1,5 @@
 [
  {
-  "date": "2026-10-29",
-  "time": null,
-  "title": "Redni spored",
-  "venue": "Kinemax Gorizia",
-  "city": "GO",
-  "cat": "film",
-  "src": "kinemax.it",
-  "sub": "Shaun vita da pecora - operazione z.u.c.c.a 17:00, 18:30 · Ragione e sentimento (sense and sensibility) 17:45 · Un tranquillo funerale di famiglia 20:20 · Dio ride 20:30",
-  "url": "https://www.kinemax.it/orari.php",
-  "regular": true
- },
- {
   "date": "2026-10-30",
   "time": null,
   "title": "Redni spored",
@@ -19,7 +7,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Shaun vita da pecora - operazione z.u.c.c.a 17:00, 18:30 · Dio ride 17:40, 20:30 · Ragione e sentimento (sense and sensibility) 17:45 · Un tranquillo funerale di famiglia 20:20 · Dracula di bram stoker 4K (ried. 2026) 20:20",
+  "sub": "Shaun vita da pecora - operazione z.u.c.c.a 17:00, 18:30 · Dio ride 17:40, 20:30 · Ragione e sentimento (sense and sensibility) 17:45 · Dracula di bram stoker 4K (ried. 2026) 20:20 · Un tranquillo funerale di famiglia 20:20",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -31,7 +19,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Ragione e sentimento (sense and sensibility) 15:20, 17:45 · Shaun vita da pecora - operazione z.u.c.c.a 15:30, 17:00 · Dio ride 15:30, 17:40, 20:30 · Fatherland 18:30 · Un tranquillo funerale di famiglia 20:20 · Dracula di bram stoker 4K (ried. 2026) 20:20",
+  "sub": "Ragione e sentimento (sense and sensibility) 15:20, 17:45 · Shaun vita da pecora - operazione z.u.c.c.a 15:30, 17:00 · Dio ride 15:30, 17:40, 20:30 · Fatherland 18:30 · Dracula di bram stoker 4K (ried. 2026) 20:20 · Un tranquillo funerale di famiglia 20:20",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -43,7 +31,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Ragione e sentimento (sense and sensibility) 15:20, 17:45 · Shaun vita da pecora - operazione z.u.c.c.a 15:30, 17:00 · Dio ride 15:30, 17:40, 20:30 · Fatherland 18:30 · Un tranquillo funerale di famiglia 20:20 · Dracula di bram stoker 4K (ried. 2026) 20:20",
+  "sub": "Ragione e sentimento (sense and sensibility) 15:20, 17:45 · Shaun vita da pecora - operazione z.u.c.c.a 15:30, 17:00 · Dio ride 15:30, 17:40, 20:30 · Fatherland 18:30 · Dracula di bram stoker 4K (ried. 2026) 20:20 · Un tranquillo funerale di famiglia 20:20",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
