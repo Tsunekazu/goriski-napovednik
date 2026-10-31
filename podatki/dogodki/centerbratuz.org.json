@@ -1,16 +1,5 @@
 [
  {
-  "date": "2026-10-31",
-  "time": "21:00",
-  "title": "A Tribute To Pink Floyd",
-  "venue": "KC Lojze Bratuž",
-  "city": "GO",
-  "cat": "glasba",
-  "src": "centerbratuz.org",
-  "sub": "Five Different Ones",
-  "url": "https://www.centerbratuz.org/koncerti/a-tribute-to-pink-floyd.html"
- },
- {
   "date": "2026-11-05",
   "time": "09:30",
   "title": "Mali polžek - pobegla nogavica pavla",
@@ -219,5 +208,15 @@
   "src": "centerbratuz.org",
   "sub": "Zavod Enostavno Prijatelji",
   "url": "https://www.centerbratuz.org/gledalisce/veliki-polzek-pika-nogavicka-in-gusar-val.html"
+ },
+ {
+  "date": "2027-01-30",
+  "time": "16:30",
+  "title": "Zimski popoldnevi - pomeriggi d'inverno",
+  "venue": "KC Lojze Bratuž",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "centerbratuz.org",
+  "url": "https://www.centerbratuz.org/gledalisce/zimski-popoldnevi-pomeriggi-d-inverno.8.html"
  }
 ]
