@@ -1,1 +1,34 @@
-[]
+[
+ {
+  "date": "2026-11-03",
+  "time": null,
+  "title": "Kino Nova Gorica; filmski program",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-kino-nova-gorica-filmski-program/"
+ },
+ {
+  "date": "2026-11-05",
+  "time": "20:00",
+  "title": "Michal Rynia in NAstja Bremec Rynia",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "sub": "Premiera plesne predstave Geometrija padca avtorji",
+  "url": "https://www.robin.si/dogodek/nova-gorica-sng-premiera-plesne-predstave-geometrija-padca-avtorji-michal-rynia-in-nastja-bremec-rynia/"
+ },
+ {
+  "date": "2026-11-14",
+  "time": "20:00",
+  "title": "Skok čez kožo",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "sub": "Plesna predstava",
+  "url": "https://www.robin.si/dogodek/nova-gorica-sng-plesna-predstava-skok-cez-kozo/"
+ }
+]
