@@ -13,13 +13,24 @@
  {
   "date": "2026-11-18",
   "time": "20:30",
-  "title": "The Howlers",
+  "title": "The Howlers, Delta Riff, Unknown",
   "venue": "Mostovna",
   "city": "NG",
   "cat": "glasba",
   "src": "mostovna.com",
   "url": "https://www.mostovna.com/dogodki/the-howlers-26",
   "price": "15–20 €"
+ },
+ {
+  "date": "2026-11-27",
+  "time": "22:00",
+  "title": "Palud Boyz",
+  "venue": "Mostovna",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "mostovna.com",
+  "url": "https://www.mostovna.com/dogodki/palud-boyz1",
+  "free": true
  },
  {
   "date": "2026-11-30",
@@ -31,5 +42,16 @@
   "src": "mostovna.com",
   "url": "https://www.mostovna.com/dogodki/toody-cole-and-her-band-dead-moon-jenny-dont-and-the-spurs",
   "price": "24–30 €"
+ },
+ {
+  "date": "2026-12-12",
+  "time": "21:30",
+  "title": "Greia, Fracture, Suicide by Choice",
+  "venue": "Mostovna",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "mostovna.com",
+  "url": "https://www.mostovna.com/dogodki/greia-fracture-suicide-by-choice",
+  "price": "15 €"
  }
 ]
