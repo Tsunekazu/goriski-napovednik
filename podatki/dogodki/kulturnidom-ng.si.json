@@ -107,6 +107,18 @@
   "price": "10–18 €"
  },
  {
+  "date": "2026-11-17",
+  "time": "18:00",
+  "title": "Nove perspektive",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "kulturnidom-ng.si",
+  "sub": "Kino z Akademijo umetnosti Univerze v Novi Gorici · Mala dvorana",
+  "url": "https://kulturnidom-ng.si/events/nove-perspektive-5/",
+  "free": true
+ },
+ {
   "date": "2026-11-19",
   "time": "20:00",
   "title": "Jaz sem najboljši fotr na svetu",

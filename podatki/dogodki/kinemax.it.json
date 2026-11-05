@@ -1,17 +1,5 @@
 [
  {
-  "date": "2026-11-04",
-  "time": null,
-  "title": "Redni spored",
-  "venue": "Kinemax Gorizia",
-  "city": "GO",
-  "cat": "film",
-  "src": "kinemax.it",
-  "sub": "Shaun vita da pecora - operazione z.u.c.c.a 17:00, 18:30 · Dio ride 17:40, 20:30 · Ragione e sentimento (sense and sensibility) 17:45 · Un tranquillo funerale di famiglia 20:20 · Fatherland 20:30",
-  "url": "https://www.kinemax.it/orari.php",
-  "regular": true
- },
- {
   "date": "2026-11-05",
   "time": null,
   "title": "Redni spored",
@@ -43,7 +31,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Shaun vita da pecora - operazione z.u.c.c.a 15:00 · Se domani non torno 15:00, 17:15, 20:30 · Il gatto col cappello (the cat in the hat) 15:00, 16:30 · Dio ride 17:00, 20:45 · Wild horse nine 18:30, 20:40 · Un tranquillo funerale di famiglia 19:00",
+  "sub": "Se domani non torno 15:00, 17:15, 20:30 · Il gatto col cappello (the cat in the hat) 15:00, 16:30 · Shaun vita da pecora - operazione z.u.c.c.a 15:00 · Dio ride 17:00, 20:45 · Wild horse nine 18:30, 20:40 · Un tranquillo funerale di famiglia 19:00",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -55,7 +43,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Shaun vita da pecora - operazione z.u.c.c.a 15:00 · Se domani non torno 15:00, 17:15, 20:30 · Il gatto col cappello (the cat in the hat) 15:00, 16:30 · Dio ride 17:00, 20:45 · Wild horse nine 18:30, 20:40 · Un tranquillo funerale di famiglia 19:00",
+  "sub": "Se domani non torno 15:00, 17:15, 20:30 · Il gatto col cappello (the cat in the hat) 15:00, 16:30 · Shaun vita da pecora - operazione z.u.c.c.a 15:00 · Dio ride 17:00, 20:45 · Wild horse nine 18:30, 20:40 · Un tranquillo funerale di famiglia 19:00",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -92,6 +80,30 @@
   "cat": "film",
   "src": "kinemax.it",
   "sub": "Dio ride 17:30, 20:30 · Se domani non torno 17:30, 20:30 · Il gatto col cappello (the cat in the hat) 17:40 · Wild horse nine 20:20",
+  "url": "https://www.kinemax.it/orari.php",
+  "regular": true
+ },
+ {
+  "date": "2026-11-14",
+  "time": null,
+  "title": "Redni spored",
+  "venue": "Kinemax Gorizia",
+  "city": "GO",
+  "cat": "film",
+  "src": "kinemax.it",
+  "sub": "Mustang 18:00",
+  "url": "https://www.kinemax.it/orari.php",
+  "regular": true
+ },
+ {
+  "date": "2026-12-10",
+  "time": null,
+  "title": "Redni spored",
+  "venue": "Kinemax Gorizia",
+  "city": "GO",
+  "cat": "film",
+  "src": "kinemax.it",
+  "sub": "Sulle ali dell'amicizia 20:30",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },

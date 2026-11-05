@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "date": "2026-11-06",
+  "time": "19:00",
+  "title": "Tradicionalni Martinov koncert",
+  "venue": "Velika dvorana občinske palače",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "turizem-novagorica-vipavskadolina.si",
+  "url": "https://dogodki.turizem-novagorica-vipavskadolina.si/sl/koledar-dogodkov/2026-11-06/2026103015042703/tradicionalni-martinov-koncert/"
+ },
+ {
+  "date": "2026-11-08",
+  "time": "17:00",
+  "title": "Absurdna komedija: Nor, nor, norišnica!!!",
+  "venue": "Mladinski center Vrtojba",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "turizem-novagorica-vipavskadolina.si",
+  "url": "https://dogodki.turizem-novagorica-vipavskadolina.si/sl/koledar-dogodkov/2026-11-08/2026110415434813/absurdna-komedija:-nor,-nor,-norisnica!!!/"
+ },
+ {
+  "date": "2026-11-18",
+  "time": "19:00",
+  "title": "Pogovori o ... glasbi",
+  "venue": "Grad Kromberk",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "turizem-novagorica-vipavskadolina.si",
+  "url": "https://dogodki.turizem-novagorica-vipavskadolina.si/sl/koledar-dogodkov/2026-11-18/2026110415502697/pogovori-o--glasbi/"
+ },
+ {
+  "date": "2026-11-21",
+  "time": "18:00",
+  "title": "Jubilejni koncert: Življenje je kot val",
+  "venue": "Koncertna dvorana Glasbene šole Nova Gorica",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "turizem-novagorica-vipavskadolina.si",
+  "url": "https://dogodki.turizem-novagorica-vipavskadolina.si/sl/koledar-dogodkov/2026-11-21/2026110416003803/jubilejni-koncert:-zivljenje-je-kot-val/"
+ }
+]
