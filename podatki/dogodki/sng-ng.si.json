@@ -1,27 +1,5 @@
 [
  {
-  "date": "2026-11-05",
-  "time": "19:30",
-  "title": "Cveta Mirnik: Kostumografinja in njen svet",
-  "venue": "SNG Nova Gorica",
-  "city": "NG",
-  "cat": "gledalisce",
-  "src": "sng-ng.si",
-  "sub": "Odprtje razstave · Foyer",
-  "url": "https://www.sng-ng.si/sl/repertoar/drugi-dogodki/cveta-mirnik-kostumografinja-in-njen-svet/"
- },
- {
-  "date": "2026-11-05",
-  "time": "20:00",
-  "title": "Geometrija padca",
-  "venue": "SNG Nova Gorica",
-  "city": "NG",
-  "cat": "gledalisce",
-  "src": "sng-ng.si",
-  "sub": "Michal Rynia, Nastja Bremec Rynia · Plesna uprizoritev · Veliki oder",
-  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/geometrija-padca/"
- },
- {
   "date": "2026-11-07",
   "time": "10:30",
   "title": "Gozd raja!",
@@ -196,5 +174,16 @@
   "src": "sng-ng.si",
   "sub": "Srečko Kosovel, Fanica Obid · Dokumentarna pravljica · EPICenter Nova Gorica",
   "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/jesen-moje-mladosti/"
+ },
+ {
+  "date": "2026-12-31",
+  "time": "19:00",
+  "title": "Usje se je dalu",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Tereza Gregorič, Borut Petrović, Jakob Šfiligoj · Komedija · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/usje-se-je-dalu/"
  }
 ]
