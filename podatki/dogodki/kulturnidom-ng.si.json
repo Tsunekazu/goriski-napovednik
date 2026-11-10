@@ -1,16 +1,5 @@
 [
  {
-  "date": "2026-11-09",
-  "time": "18:00",
-  "title": "Junaki Soče | Zgodba o ljudeh, ki so rešili reko…",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "gledalisce",
-  "src": "kulturnidom-ng.si",
-  "sub": "Potohodci · Velika dvorana",
-  "url": "https://kulturnidom-ng.si/events/junaki-soce-zgodba-o-ljudeh-ki-so-resili-reko/"
- },
- {
   "date": "2026-11-10",
   "time": "20:15",
   "title": "Zasebno življenje (2025)",
@@ -438,5 +427,16 @@
   "sub": "Mala dvorana",
   "url": "https://kulturnidom-ng.si/events/njihova-tamlada-2026/",
   "price": "4,50–5,50 €"
+ },
+ {
+  "date": "2026-12-22",
+  "time": "20:00",
+  "title": "Slovesnost ob dnevu samostojnosti in enotnosti",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "kulturnidom-ng.si",
+  "sub": "Velika dvorana",
+  "url": "https://kulturnidom-ng.si/events/slovesnost-ob-dnevu-samostojnosti-in-enotnosti-3/"
  }
 ]

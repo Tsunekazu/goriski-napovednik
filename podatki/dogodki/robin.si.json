@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-11-10",
+  "time": "20:15",
+  "title": "Zasebno življenje",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-zasebno-zivljenje/"
+ },
+ {
+  "date": "2026-11-13",
+  "time": "17:30",
+  "title": "Kojot proti sitemu",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-kojot-proti-sitemu/"
+ },
+ {
+  "date": "2026-11-13",
+  "time": "20:15",
+  "title": "Fjord",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-fjord/"
+ },
+ {
   "date": "2026-11-14",
   "time": "18:00",
   "title": "Martinov koncert v Oseku",
@@ -19,5 +49,25 @@
   "src": "robin.si",
   "sub": "Plesna predstava",
   "url": "https://www.robin.si/dogodek/nova-gorica-sng-plesna-predstava-skok-cez-kozo/"
+ },
+ {
+  "date": "2026-11-14",
+  "time": "20:15",
+  "title": "Drama",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-drama/"
+ },
+ {
+  "date": "2026-11-17",
+  "time": "18:00",
+  "title": "Nove perspektive",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-nove-perspektive/"
  }
 ]
