@@ -1,16 +1,5 @@
 [
  {
-  "date": "2026-11-10",
-  "time": "20:45",
-  "title": "Le ultime lune",
-  "venue": "Teatro Verdi",
-  "city": "GO",
-  "cat": "gledalisce",
-  "src": "teatroverdi.gorizia.it",
-  "sub": "Prosa",
-  "url": "https://www.teatroverdi.gorizia.it/spettacolo/le-ultime-lune/"
- },
- {
   "date": "2026-11-19",
   "time": "20:45",
   "title": "Accabadora",
@@ -130,5 +119,16 @@
   "src": "teatroverdi.gorizia.it",
   "sub": "Verdi Racconta",
   "url": "https://www.teatroverdi.gorizia.it/spettacolo/guarda-le-luci-amore-mio/"
+ },
+ {
+  "date": "2027-02-10",
+  "time": "20:45",
+  "title": "Tango buenos aires",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "glasba",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Musica e Balletto",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/tango-buenos-aires/"
  }
 ]

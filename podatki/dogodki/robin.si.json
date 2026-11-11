@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-11-10",
-  "time": "20:15",
-  "title": "Zasebno življenje",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-zasebno-zivljenje/"
- },
- {
   "date": "2026-11-13",
   "time": "17:30",
   "title": "Kojot proti sitemu",
@@ -59,6 +49,17 @@
   "cat": "film",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-drama/"
+ },
+ {
+  "date": "2026-11-16",
+  "time": "20:15",
+  "title": "Ensemble dissonance",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "robin.si",
+  "sub": "Glasbeni abonma; 46. koncertna sezona, 2. koncert ",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-glasbeni-abonma-46-koncertna-sezona-2-koncert-ensemble-dissonance/"
  },
  {
   "date": "2026-11-17",

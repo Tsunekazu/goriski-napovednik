@@ -1,16 +1,5 @@
 [
  {
-  "date": "2026-11-10",
-  "time": "18:00",
-  "title": "Usje se je dalu",
-  "venue": "SNG Nova Gorica",
-  "city": "NG",
-  "cat": "gledalisce",
-  "src": "sng-ng.si",
-  "sub": "Tereza Gregorič, Borut Petrović, Jakob Šfiligoj · Komedija · Veliki oder",
-  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/usje-se-je-dalu/"
- },
- {
   "date": "2026-11-11",
   "time": "20:00",
   "title": "Noč v Zagorju",
@@ -163,6 +152,138 @@
   "src": "sng-ng.si",
   "sub": "Srečko Kosovel, Fanica Obid · Dokumentarna pravljica · EPICenter Nova Gorica",
   "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/jesen-moje-mladosti/"
+ },
+ {
+  "date": "2026-12-03",
+  "time": "20:00",
+  "title": "V potu mojega obraza",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Avtorski projekt · Koreografski esej · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/v-potu-mojega-obraza/"
+ },
+ {
+  "date": "2026-12-05",
+  "time": "10:30",
+  "title": "Pravljice po telefonu",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Gianni Rodari · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/drugi-dogodki/pravljice-po-telefonu/"
+ },
+ {
+  "date": "2026-12-06",
+  "time": "18:00",
+  "title": "Županova Micka",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Anton Tomaž Linhart · Nova interpretacija klasike · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/zupanova-micka-2026052715583626795/"
+ },
+ {
+  "date": "2026-12-10",
+  "time": "18:00",
+  "title": "Kekec proti Kekcu",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Boštjan Gorenc – Pižama · Komedija zamenjav · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/kekec-proti-kekcu/"
+ },
+ {
+  "date": "2026-12-11",
+  "time": "20:00",
+  "title": "Usje se je dalu",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Tereza Gregorič, Borut Petrović, Jakob Šfiligoj · Komedija · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/usje-se-je-dalu/"
+ },
+ {
+  "date": "2026-12-12",
+  "time": "10:30",
+  "title": "Hišica iz kock",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Po motivih Ele Peroci · Mali oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/drugi-dogodki/hisica-iz-kock/"
+ },
+ {
+  "date": "2026-12-12",
+  "time": "18:00",
+  "title": "Usje se je dalu",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Tereza Gregorič, Borut Petrović, Jakob Šfiligoj · Komedija · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/usje-se-je-dalu/"
+ },
+ {
+  "date": "2026-12-15",
+  "time": "20:00",
+  "title": "Marija Stuart",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Friedrich Schiller · Klasična drama · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/marija-stuart/"
+ },
+ {
+  "date": "2026-12-19",
+  "time": "20:00",
+  "title": "Božična pesem",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Charles Dickens, Neil Bartlett · Družinski muzikal · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/bozicna-pesem/"
+ },
+ {
+  "date": "2026-12-22",
+  "time": "18:00",
+  "title": "Božična pesem",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Charles Dickens, Neil Bartlett · Družinski muzikal · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/bozicna-pesem/"
+ },
+ {
+  "date": "2026-12-29",
+  "time": "20:00",
+  "title": "Realisti",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Jure Karas · Kabaret za pet igralcev, pijanca in občinstvo · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/realisti/"
+ },
+ {
+  "date": "2026-12-30",
+  "time": "20:00",
+  "title": "Noč v Zagorju",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "sng-ng.si",
+  "sub": "Aleš Berger · Odrski kalejdoskop · Veliki oder",
+  "url": "https://www.sng-ng.si/sl/repertoar/arhiv-predstav/noc-v-zagorju/"
  },
  {
   "date": "2026-12-31",

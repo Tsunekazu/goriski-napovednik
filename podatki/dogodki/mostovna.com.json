@@ -44,6 +44,17 @@
   "price": "24–30 €"
  },
  {
+  "date": "2026-12-05",
+  "time": "20:00",
+  "title": "Razvalina, Lintver, Feral Forms, Whiskey Ritual",
+  "venue": "Mostovna",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "mostovna.com",
+  "url": "https://www.mostovna.com/dogodki/razvalina-lintver-feral-forms-whiskey-ritual",
+  "free": true
+ },
+ {
   "date": "2026-12-12",
   "time": "21:30",
   "title": "Greia, Fracture, Suicide by Choice",
@@ -53,5 +64,16 @@
   "src": "mostovna.com",
   "url": "https://www.mostovna.com/dogodki/greia-fracture-suicide-by-choice",
   "price": "15 €"
+ },
+ {
+  "date": "2026-12-19",
+  "time": "20:30",
+  "title": "Scuffy Dogs, Aktivna Propaganda, Fakofbolan",
+  "venue": "Mostovna",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "mostovna.com",
+  "url": "https://www.mostovna.com/dogodki/scuffy-dogs-aktivna-propaganda-fakofbolan",
+  "price": "20–25 €"
  }
 ]

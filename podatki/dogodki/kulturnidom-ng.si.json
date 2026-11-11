@@ -1,17 +1,5 @@
 [
  {
-  "date": "2026-11-10",
-  "time": "20:15",
-  "title": "Zasebno življenje (2025)",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "kulturnidom-ng.si",
-  "sub": "Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/zasebno-zivljenje-2025/",
-  "price": "4,50–5,50 €"
- },
- {
   "date": "2026-11-13",
   "time": "17:30",
   "title": "Kojot proti sistemu (2026), 8+",
@@ -199,6 +187,18 @@
   "src": "kulturnidom-ng.si",
   "sub": "Filmsko gledališče – za abonma in izven · Mala dvorana",
   "url": "https://kulturnidom-ng.si/events/sirat-2025/"
+ },
+ {
+  "date": "2026-11-28",
+  "time": "17:30",
+  "title": "Junaki soče (2026)",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "kulturnidom-ng.si",
+  "sub": "Mala dvorana",
+  "url": "https://kulturnidom-ng.si/events/junaki-soce-2026/",
+  "price": "4,50–5,50 €"
  },
  {
   "date": "2026-11-28",
