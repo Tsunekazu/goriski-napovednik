@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-11-12",
-  "time": null,
-  "title": "IL Teatro Che TI FO – Poklon Dariu Fòju",
-  "venue": "KC Lojze Bratuž",
-  "city": "GO",
-  "cat": "gledalisce",
-  "src": "centerbratuz.org",
-  "url": "https://www.centerbratuz.org/gledalisce/il-teatro-che-ti-fo--poklon-dariu-fju.html"
- },
- {
   "date": "2026-11-14",
   "time": "16:30",
   "title": "Zimski popoldnevi - pomeriggi d'inverno",
@@ -217,5 +207,16 @@
   "cat": "gledalisce",
   "src": "centerbratuz.org",
   "url": "https://www.centerbratuz.org/gledalisce/zimski-popoldnevi-pomeriggi-d-inverno.9.html"
+ },
+ {
+  "date": "2027-02-11",
+  "time": "09:30",
+  "title": "Veliki polžek – palčica",
+  "venue": "KC Lojze Bratuž",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "centerbratuz.org",
+  "sub": "Ku-kuc Gledališče",
+  "url": "https://www.centerbratuz.org/gledalisce/veliki-polzek--palcica.html"
  }
 ]

@@ -51,6 +51,17 @@
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-drama/"
  },
  {
+  "date": "2026-11-15",
+  "time": "11:00",
+  "title": "Vsem ljudem nikoli ne ustrežeš",
+  "venue": "Kulturni dom Gorica",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "sub": "Gledališka predstava",
+  "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-gledaliska-predstava-vsem-ljudem-nikoli-ne-ustrezes/"
+ },
+ {
   "date": "2026-11-16",
   "time": "20:15",
   "title": "Ensemble dissonance",
@@ -70,5 +81,25 @@
   "cat": "film",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-nove-perspektive/"
+ },
+ {
+  "date": "2026-11-21",
+  "time": "19:30",
+  "title": "»Verjemi v ljubezen« Mešanega pevskega zbora Roženice iz Pazina (Hrvaška) S posebnim nastopom humanoidnega robota Tonke",
+  "venue": "Kulturni dom Gorica",
+  "city": "GO",
+  "cat": "glasba",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-koncert-verjemi-v-ljubezen-mesanega-pevskega-zbora-rozenice-iz-pazina-hrvaska-s-posebnim-nastopom-humanoidnega-robota-tonke/"
+ },
+ {
+  "date": "2026-11-28",
+  "time": "17:30",
+  "title": "Junaki Soče; dodatna projekcija filma",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-junaki-soce-dodatna-projekcija-filma/"
  }
 ]

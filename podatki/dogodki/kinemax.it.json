@@ -1,17 +1,5 @@
 [
  {
-  "date": "2026-11-11",
-  "time": null,
-  "title": "Redni spored",
-  "venue": "Kinemax Gorizia",
-  "city": "GO",
-  "cat": "film",
-  "src": "kinemax.it",
-  "sub": "Dio ride 17:30, 20:30 · Se domani non torno 17:30, 20:30 · Il gatto col cappello (the cat in the hat) 17:40 · Wild horse nine 20:20",
-  "url": "https://www.kinemax.it/orari.php",
-  "regular": true
- },
- {
   "date": "2026-11-12",
   "time": null,
   "title": "Redni spored",
@@ -31,7 +19,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Dio ride 17:00 · Se domani non torno 17:00, 20:40 · Look back 17:30 · Il canto della foresta (le chant des forets) 19:00 · L'essere amato 20:15 · Wild horse nine 20:30",
+  "sub": "Se domani non torno 17:00, 20:40 · Dio ride 17:00 · Look back 17:30 · Il canto della foresta (le chant des forets) 19:00 · L'essere amato 20:15 · Wild horse nine 20:30",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -43,7 +31,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Il gatto col cappello (the cat in the hat) 15:00 · Look back 15:00, 19:00 · L'essere amato 15:00, 20:15 · Se domani non torno 16:50, 20:45 · Wild horse nine 17:30, 20:45 · Mustang 18:00",
+  "sub": "Look back 15:00, 19:00 · L'essere amato 15:00, 20:15 · Il gatto col cappello (the cat in the hat) 15:00 · Se domani non torno 16:50, 20:45 · Wild horse nine 17:30, 20:45 · Mustang 18:00",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -55,7 +43,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Il gatto col cappello (the cat in the hat) 15:00 · Look back 15:00, 19:00 · L'essere amato 15:00, 20:15 · Se domani non torno 16:50, 20:45 · Dio ride 17:00 · Wild horse nine 17:30, 20:45 · Il canto della foresta (le chant des forets) 19:00",
+  "sub": "Look back 15:00, 19:00 · L'essere amato 15:00, 20:15 · Il gatto col cappello (the cat in the hat) 15:00 · Se domani non torno 16:50, 20:45 · Dio ride 17:00 · Wild horse nine 17:30, 20:45 · Il canto della foresta (le chant des forets) 19:00",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
