@@ -21,6 +21,17 @@
  },
  {
   "date": "2026-11-14",
+  "time": "16:30",
+  "title": "Za Zlatolasko",
+  "venue": "KC Lojze Bratuž",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "sub": "Otroška predstava",
+  "url": "https://www.robin.si/dogodek/gorica-kc-lojze-bratuz-otroska-predstava-za-zlatolasko/"
+ },
+ {
+  "date": "2026-11-14",
   "time": "18:00",
   "title": "Martinov koncert v Oseku",
   "venue": "župnijska cerkev sv Martina",
@@ -62,6 +73,16 @@
   "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-gledaliska-predstava-vsem-ljudem-nikoli-ne-ustrezes/"
  },
  {
+  "date": "2026-11-15",
+  "time": "17:30",
+  "title": "Ena melodija, dva bregova",
+  "venue": "KC Lojze Bratuž",
+  "city": "GO",
+  "cat": "glasba",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/gorica-kc-lojze-bratuz-koncert-ena-melodija-dva-bregova/"
+ },
+ {
   "date": "2026-11-16",
   "time": "20:15",
   "title": "Ensemble dissonance",
@@ -83,6 +104,16 @@
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-nove-perspektive/"
  },
  {
+  "date": "2026-11-18",
+  "time": "19:00",
+  "title": "Pogovori o ... glasbi",
+  "venue": "Grad Kromberk",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/kromberk-grad-pogovori-o-glasbi/"
+ },
+ {
   "date": "2026-11-21",
   "time": "19:30",
   "title": "»Verjemi v ljubezen« Mešanega pevskega zbora Roženice iz Pazina (Hrvaška) S posebnim nastopom humanoidnega robota Tonke",
@@ -91,6 +122,17 @@
   "cat": "glasba",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-koncert-verjemi-v-ljubezen-mesanega-pevskega-zbora-rozenice-iz-pazina-hrvaska-s-posebnim-nastopom-humanoidnega-robota-tonke/"
+ },
+ {
+  "date": "2026-11-23",
+  "time": "19:00",
+  "title": "Dediščina",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "sub": "avtorska komedija (Vid Valič)",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-avtorska-komedija-vid-valic-dediscina/"
  },
  {
   "date": "2026-11-28",
