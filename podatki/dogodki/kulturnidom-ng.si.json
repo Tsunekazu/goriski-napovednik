@@ -1,29 +1,5 @@
 [
  {
-  "date": "2026-11-13",
-  "time": "17:30",
-  "title": "Kojot proti sistemu (2026), 8+",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "kulturnidom-ng.si",
-  "sub": "Filmski vrtiljak · Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/kojot-proti-sistemu-2026-8/",
-  "price": "4,50–5,50 €"
- },
- {
-  "date": "2026-11-13",
-  "time": "20:15",
-  "title": "Fjord (2026)",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "kulturnidom-ng.si",
-  "sub": "Mala dvorana",
-  "url": "https://kulturnidom-ng.si/events/fjord-2026/",
-  "price": "4,50–5,50 €"
- },
- {
   "date": "2026-11-14",
   "time": "20:15",
   "title": "Drama (2026)",
