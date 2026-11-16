@@ -1,70 +1,60 @@
 {
  "kulturnidom-ng.si": {
-  "ok": "2026-11-14T10:05+01:00",
-  "n": 36,
-  "error": "0 dogodkov, prej jih je bilo več: morda se je stran spremenila",
-  "failed": "2026-11-15T10:36+01:00"
+  "ok": "2026-11-16T10:54+01:00",
+  "n": 35
  },
  "sng-ng.si": {
-  "ok": "2026-11-15T10:36+01:00",
+  "ok": "2026-11-16T10:54+01:00",
   "n": 23
  },
  "mostovna.com": {
-  "ok": "2026-11-14T10:05+01:00",
-  "n": 7,
-  "error": "0 dogodkov, prej jih je bilo več: morda se je stran spremenila",
-  "failed": "2026-11-15T10:36+01:00"
+  "ok": "2026-11-16T10:54+01:00",
+  "n": 6
  },
  "zkdng.si": {
-  "ok": "2026-11-14T10:05+01:00",
-  "n": 0,
-  "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-  "failed": "2026-11-15T10:36+01:00"
+  "ok": "2026-11-16T10:54+01:00",
+  "n": 0
  },
  "turizem-novagorica-vipavskadolina.si": {
-  "ok": "2026-11-15T10:36+01:00",
+  "ok": "2026-11-16T10:54+01:00",
   "n": 4
  },
  "robin.si": {
-  "ok": "2026-11-14T10:05+01:00",
-  "n": 12,
-  "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-  "failed": "2026-11-15T10:36+01:00"
+  "ok": "2026-11-16T10:54+01:00",
+  "n": 6
  },
  "kulturnidom.it": {
   "ok": "2026-10-15T09:33+02:00",
   "n": 6,
   "error": "HTTPError: HTTP Error 404: Not Found",
-  "failed": "2026-11-15T10:36+01:00"
+  "failed": "2026-11-16T10:54+01:00"
  },
  "centerbratuz.org": {
-  "ok": "2026-11-14T10:05+01:00",
-  "n": 20,
-  "error": "0 dogodkov, prej jih je bilo več: morda se je stran spremenila",
-  "failed": "2026-11-15T10:36+01:00"
+  "ok": "2026-11-16T10:54+01:00",
+  "n": 19
  },
  "kinemax.it": {
-  "ok": "2026-11-15T10:36+01:00",
-  "n": 7
+  "ok": "2026-11-16T10:54+01:00",
+  "n": 6
  },
  "teatroverdi.gorizia.it": {
-  "ok": "2026-11-15T10:36+01:00",
+  "ok": "2026-11-16T10:54+01:00",
   "n": 12
  },
  "artistiassociatigorizia.it": {
-  "ok": "2026-11-15T10:36+01:00",
+  "ok": "2026-11-16T10:54+01:00",
   "n": 0
  },
  "zskd.eu": {
-  "ok": "2026-11-15T10:36+01:00",
+  "ok": "2026-11-16T10:54+01:00",
   "n": 0
  },
  "zskp.eu": {
-  "ok": "2026-11-15T10:36+01:00",
+  "ok": "2026-11-16T10:54+01:00",
   "n": 1
  },
  "scopri.gorizia.it": {
-  "ok": "2026-11-15T10:36+01:00",
+  "ok": "2026-11-16T10:54+01:00",
   "n": 1
  }
 }
