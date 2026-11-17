@@ -1,16 +1,5 @@
 [
  {
-  "date": "2026-11-16",
-  "time": "20:15",
-  "title": "Ensemble dissonance",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "glasba",
-  "src": "robin.si",
-  "sub": "Glasbeni abonma; 46. koncertna sezona, 2. koncert ",
-  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-glasbeni-abonma-46-koncertna-sezona-2-koncert-ensemble-dissonance/"
- },
- {
   "date": "2026-11-17",
   "time": "18:00",
   "title": "Nove perspektive",
@@ -19,6 +8,16 @@
   "cat": "film",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-nove-perspektive/"
+ },
+ {
+  "date": "2026-11-17",
+  "time": null,
+  "title": "Filmski spored v Kulturnem domu Nova Gorica",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-filmski-spored-v-kulturnem-domu-nova-gorica/"
  },
  {
   "date": "2026-11-18",
@@ -39,6 +38,16 @@
   "cat": "glasba",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-koncert-verjemi-v-ljubezen-mesanega-pevskega-zbora-rozenice-iz-pazina-hrvaska-s-posebnim-nastopom-humanoidnega-robota-tonke/"
+ },
+ {
+  "date": "2026-11-23",
+  "time": "18:00",
+  "title": "Pet vrst tišine",
+  "venue": "SNG Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-sng-predstava-pet-vrst-tisine/"
  },
  {
   "date": "2026-11-23",
