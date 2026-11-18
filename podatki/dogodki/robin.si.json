@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-11-17",
-  "time": "18:00",
-  "title": "Nove perspektive",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-film-nove-perspektive/"
- },
- {
-  "date": "2026-11-17",
-  "time": null,
-  "title": "Filmski spored v Kulturnem domu Nova Gorica",
-  "venue": "Kulturni dom Nova Gorica",
-  "city": "NG",
-  "cat": "film",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-filmski-spored-v-kulturnem-domu-nova-gorica/"
- },
- {
   "date": "2026-11-18",
   "time": "19:00",
   "title": "Pogovori o ... glasbi",
@@ -28,6 +8,17 @@
   "cat": "glasba",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/kromberk-grad-pogovori-o-glasbi/"
+ },
+ {
+  "date": "2026-11-21",
+  "time": "18:00",
+  "title": "Življenje je kot val",
+  "venue": "Koncertna dvorana Glasbene šole Nova Gorica",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "robin.si",
+  "sub": "Jubilejni koncert",
+  "url": "https://www.robin.si/dogodek/nova-gorica-koncertna-dvorana-glasbene-sole-nova-gorica-jubilejni-koncert-zivljenje-je-kot-val/"
  },
  {
   "date": "2026-11-21",
