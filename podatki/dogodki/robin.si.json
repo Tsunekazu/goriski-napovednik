@@ -1,26 +1,5 @@
 [
  {
-  "date": "2026-11-21",
-  "time": "18:00",
-  "title": "Življenje je kot val",
-  "venue": "Koncertna dvorana Glasbene šole Nova Gorica",
-  "city": "NG",
-  "cat": "glasba",
-  "src": "robin.si",
-  "sub": "Jubilejni koncert",
-  "url": "https://www.robin.si/dogodek/nova-gorica-koncertna-dvorana-glasbene-sole-nova-gorica-jubilejni-koncert-zivljenje-je-kot-val/"
- },
- {
-  "date": "2026-11-21",
-  "time": "19:30",
-  "title": "»Verjemi v ljubezen« Mešanega pevskega zbora Roženice iz Pazina (Hrvaška) S posebnim nastopom humanoidnega robota Tonke",
-  "venue": "Kulturni dom Gorica",
-  "city": "GO",
-  "cat": "glasba",
-  "src": "robin.si",
-  "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-koncert-verjemi-v-ljubezen-mesanega-pevskega-zbora-rozenice-iz-pazina-hrvaska-s-posebnim-nastopom-humanoidnega-robota-tonke/"
- },
- {
   "date": "2026-11-23",
   "time": "18:00",
   "title": "Pet vrst tišine",
