@@ -21,6 +21,16 @@
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-avtorska-komedija-vid-valic-dediscina/"
  },
  {
+  "date": "2026-11-23",
+  "time": null,
+  "title": "Mednarodno glasbeno tekmovanje Musica Goritiensis 2026",
+  "venue": "KC Lojze Bratuž",
+  "city": "GO",
+  "cat": "glasba",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/gorica-kc-lojze-bratuz-mednarodno-glasbeno-tekmovanje-musica-goritiensis-2026/"
+ },
+ {
   "date": "2026-11-28",
   "time": "17:30",
   "title": "Junaki Soče; dodatna projekcija filma",
@@ -29,5 +39,16 @@
   "cat": "film",
   "src": "robin.si",
   "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-junaki-soce-dodatna-projekcija-filma/"
+ },
+ {
+  "date": "2026-11-29",
+  "time": "17:30",
+  "title": "Una drio l’altra",
+  "venue": "KC Lojze Bratuž",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "sub": "Gledališki abonma v tržaškem narečju Go Armonia",
+  "url": "https://www.robin.si/dogodek/gorica-kc-lojze-bratuz-gledaliski-abonma-v-trzaskem-narecju-go-armonia-una-drio-laltra/"
  }
 ]

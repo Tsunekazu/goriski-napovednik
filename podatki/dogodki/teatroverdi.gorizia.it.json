@@ -130,5 +130,16 @@
   "src": "teatroverdi.gorizia.it",
   "sub": "Grandi Eventi",
   "url": "https://www.teatroverdi.gorizia.it/spettacolo/frida-opera-musical/"
+ },
+ {
+  "date": "2027-02-22",
+  "time": "20:45",
+  "title": "Rumori fuori scena",
+  "venue": "Teatro Verdi",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "teatroverdi.gorizia.it",
+  "sub": "Prosa",
+  "url": "https://www.teatroverdi.gorizia.it/spettacolo/rumori-fuori-scena/"
  }
 ]
