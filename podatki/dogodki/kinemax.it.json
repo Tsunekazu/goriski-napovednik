@@ -1,17 +1,5 @@
 [
  {
-  "date": "2026-11-23",
-  "time": null,
-  "title": "Redni spored",
-  "venue": "Kinemax Gorizia",
-  "city": "GO",
-  "cat": "film",
-  "src": "kinemax.it",
-  "sub": "Hunger games l'alba sulla mietitura 17:20, 20:30 · La ballata del re delle api 17:30, 20:20 · Mustang 18:00 · Fjord 20:15",
-  "url": "https://www.kinemax.it/orari.php",
-  "regular": true
- },
- {
   "date": "2026-11-24",
   "time": null,
   "title": "Redni spored",
