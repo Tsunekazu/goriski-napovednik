@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-27",
+  "time": "20:30",
+  "title": "Semplicemente francesco",
+  "venue": "Gorizia",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "scopri.gorizia.it",
+  "url": "https://www.scopri.gorizia.it/eventi/semplicemente-francesco/"
+ },
+ {
   "date": "2026-11-28",
   "time": null,
   "title": "Il mio primo concerto di natale",
@@ -8,5 +18,15 @@
   "cat": "glasba",
   "src": "scopri.gorizia.it",
   "url": "https://www.scopri.gorizia.it/eventi/il-mio-primo-concerto-di-natale/"
+ },
+ {
+  "date": "2026-12-06",
+  "time": null,
+  "title": "Pinocchio – storia di un burattino",
+  "venue": "Gorizia",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "scopri.gorizia.it",
+  "url": "https://www.scopri.gorizia.it/eventi/pinocchio-storia-di-un-burattino/"
  }
 ]
