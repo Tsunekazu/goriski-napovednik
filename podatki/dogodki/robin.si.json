@@ -11,6 +11,18 @@
  },
  {
   "date": "2026-11-29",
+  "time": "17:00",
+  "title": "Ujeti trenutek",
+  "venue": "dvorana OŠ",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "sub": "Zimski abonma",
+  "url": "https://www.robin.si/dogodek/kanal-ob-soci-dvorana-os-zimski-abonma-predstava-ujeti-trenutek/",
+  "ring": true
+ },
+ {
+  "date": "2026-11-29",
   "time": "17:30",
   "title": "Una drio l’altra",
   "venue": "KC Lojze Bratuž",

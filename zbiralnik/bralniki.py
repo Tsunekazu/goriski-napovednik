@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 
-from .skupno import (MONTH_RX, MONTHS, SKIP_RX, TZ, area, clean, event, get, get_json, guess_cat, guess_year, hhmm, nice_title,
+from .skupno import (MONTH_RX, MONTHS, SKIP_RX, TZ, area_zone, clean, event, get, get_json, guess_cat, guess_year, hhmm, nice_title,
                      price_from, today, venue_name, window, ymd)
 
 
@@ -83,9 +83,12 @@ def kdgo(src, prev):
         date, tm = tribe_when(e)
         title, sub = split_title(e.get("title", ""))
         vname, vplace = tribe_venue(e)
+        city, ring = area_zone(f"{vname} {vplace}")
+        if not city:
+            city, ring = "GO", False
         price, free = price_from(e.get("cost") or "")
         out.append(event(src["key"], date, title, venue_name(f"{vname} {vplace}", "Kulturni dom Gorica"),
-                         area(f"{vname} {vplace}") or "GO", cat, tm, sub, e.get("url"), price, free))
+                         city, cat, tm, sub, e.get("url"), price, free, ring=ring))
     return out
 
 
@@ -100,7 +103,7 @@ def robin(src, prev):
         parts = [p.strip() for p in head.split(",") if p.strip()]
         places = [p for p in parts if p == p.upper()]
         venue = ", ".join(p for p in parts if p != p.upper())
-        city = area(" ".join(places))
+        city, ring = area_zone(" ".join(places))
         cat = guess_cat(desc)
         if not city or not cat:
             continue
@@ -111,7 +114,7 @@ def robin(src, prev):
         title = re.sub(r"^(film|predstava|koncert|gledališka predstava)\s*:?\s+", "", desc.strip(), flags=re.I)
         date, tm = tribe_when(e)
         out.append(event(src["key"], date, nice_title(title), venue_name(f"{venue} {' '.join(places)}", venue or places[0].title()),
-                         city, cat, tm, sub, e.get("url")))
+                         city, cat, tm, sub, e.get("url"), ring=ring))
     return out
 
 
@@ -125,14 +128,14 @@ def tribe_generic(src, prev):
         if not cat:
             continue
         vname, vplace = tribe_venue(e)
-        city = area(f"{vname} {vplace}") if (vname or vplace) else default_city
+        city, ring = area_zone(f"{vname} {vplace}") if (vname or vplace) else (default_city, False)
         if not city:
             continue
         date, tm = tribe_when(e)
         title, sub = split_title(e.get("title", ""))
         price, free = price_from(e.get("cost") or "")
         out.append(event(src["key"], date, title, venue_name(f"{vname} {vplace}", vname or src["name"]), city, cat, tm, sub,
-                         e.get("url"), price, free))
+                         e.get("url"), price, free, ring=ring))
     return out
 
 
@@ -203,13 +206,13 @@ def aa(src, prev):
             cat = "gledalisce"
         else:
             cat = guess_cat(f"{summ} {cats}")
-        city = area(loc)
+        city, ring = area_zone(loc)
         if not cat or not city:
             continue
         date, tm = ical_when(ev.get("DTSTART"))
         sub = nice_label(re.sub(r"\s*[-–]?\s*(stagione\s*)?20\d\d/(20)?\d\d\s*$", "", cats.split(",")[0], flags=re.I))
         out.append(event(src["key"], date, nice_title(summ), venue_name(loc, loc.split(",")[0]), city, cat, tm, sub or None,
-                         val(ev, "URL") or None))
+                         val(ev, "URL") or None, ring=ring))
     return out
 
 
@@ -220,13 +223,13 @@ def zskd(src, prev):
         summ, loc = val(ev, "SUMMARY"), val(ev, "LOCATION")
         m = re.match(r"(.*?)\s*\(([^()]*)\)\s*$", summ)
         title, society = (m.group(1), m.group(2)) if m else (summ, "")
-        city, cat = area(f"{summ} {loc}"), guess_cat(title)
+        (city, ring), cat = area_zone(f"{summ} {loc}"), guess_cat(title)
         if not city or not cat or ical_span_days(ev) > 1:
             continue
         date, tm = ical_when(ev.get("DTSTART"))
         link = re.search(r"https?://[^\s\"<>]+", val(ev, "DESCRIPTION"))
         out.append(event(src["key"], date, nice_title(title), venue_name(loc, loc or society or "Gorica"), city, cat, tm,
-                         society or None, link.group(0) if link else None))
+                         society or None, link.group(0) if link else None, ring=ring))
     return out
 
 
@@ -248,6 +251,9 @@ def scopri(src, prev):
 
 
 # ——— lastni bralniki za velika prizorišča ———
+
+KDNG_OWN = re.compile(r"dvoran|preddverj|galerij|foyer|avla|kulturni dom", re.I)
+
 
 def kdng(src, prev):
     """Kulturni dom Nova Gorica: en dolg seznam; cene so na strani dogodka (shranimo jih in beremo le za nove dogodke)."""
@@ -275,9 +281,21 @@ def kdng(src, prev):
             time.sleep(0.3)
         else:
             price = free = None
-        sub = " · ".join(x for x in (typ if typ not in ("Kino", "Gostujoča prireditev") else "", hall) if x)
-        out.append(event(src["key"], ymd(m.group(3), m.group(2), m.group(1)), nice_title(raw), "Kulturni dom Nova Gorica", "NG",
-                         cat, hhmm(*hm.groups()) if hm else None, sub, url, price, free))
+        venue, city, ring, hall_sub = "Kulturni dom Nova Gorica", "NG", False, hall
+        if hall and not KDNG_OWN.search(hall):
+            ext_city, ext_ring = area_zone(hall)
+            if ext_city:
+                city, ring = ext_city, ext_ring
+                venue = venue_name(hall, re.sub(r"\s*\([A-Z]{1,3}\)\s*$", "", hall).strip())
+                hall_sub = ""
+        typ_clean = typ if typ not in ("Kino", "Gostujoča prireditev") else ""
+        if typ_clean and hall_sub and typ_clean.lower() in hall_sub.lower():
+            hall_sub = re.sub(r"\s*[–—-]\s*" + re.escape(typ_clean) + r"\s*$", "", hall_sub, flags=re.I).strip()
+            if hall_sub.lower() == typ_clean.lower():
+                hall_sub = ""
+        sub = " · ".join(x for x in (typ_clean, hall_sub) if x) or None
+        out.append(event(src["key"], ymd(m.group(3), m.group(2), m.group(1)), nice_title(raw), venue, city,
+                         cat, hhmm(*hm.groups()) if hm else None, sub, url, price, free, ring=ring))
     return out
 
 
@@ -313,13 +331,14 @@ def sng(src, prev):
                 times = [txt(p) for p in r.select(".schedule-time p")]
                 tm = re.match(r"(\d{1,2})[.:](\d{2})", times[0]) if times else None
                 stage = times[1] if len(times) > 1 else ""
-                city = "NG" if not stage or SNG_OWN.search(stage) else area(stage)
+                city, ring = ("NG", False) if (not stage or SNG_OWN.search(stage)) else area_zone(stage)
                 if not link or not city:
                     continue
-                venue = "SNG Nova Gorica" if city == "NG" and (not stage or SNG_OWN.search(stage)) else venue_name(stage)
+                venue = "SNG Nova Gorica" if city == "NG" and not ring and (not stage or SNG_OWN.search(stage)) else venue_name(stage)
                 sub = " · ".join(x for x in (txt(r.select_one(".schedule-title-info span")), txt(r.select_one("p.genre")), stage) if x)
                 out.append(event(src["key"], ymd(year, mon, day), nice_title(txt(link)), venue, city, "gledalisce",
-                                 hhmm(*tm.groups()) if tm else None, sub, urllib.parse.urljoin("https://www.sng-ng.si", link["href"])))
+                                 hhmm(*tm.groups()) if tm else None, sub, urllib.parse.urljoin("https://www.sng-ng.si", link["href"]),
+                                 ring=ring))
     return out
 
 
@@ -434,7 +453,7 @@ def kinemax(src, prev):
         for a in mv.select("a[data-time]"):
             place = a.find_previous(class_="time-select__place")
             where = (txt(place) + " " + " ".join(x.get("title", "") for x in place.select("a[title]"))) if place else ""
-            if area(where) != "GO":
+            if area_zone(where) != ("GO", False):
                 continue
             when = dt.datetime.fromtimestamp(int(a["data-time"]) / 1000, TZ)
             days[when.date().isoformat()][title].append(when.strftime("%H:%M"))
@@ -460,14 +479,14 @@ def tic(src, prev):
             continue
         loc = txt(g.select_one(".location"))
         title = txt(a)
-        city, cat = area(loc), guess_cat(title)
+        (city, ring), cat = area_zone(loc), guess_cat(title)
         if not city or not cat:
             continue
         d = dates[0]
         hm = re.search(r"(\d{1,2}):(\d{2})", txt(g.select_one(".hour")))
         out.append(event(src["key"], ymd(d[2], d[1], d[0]), nice_title(title), venue_name(loc, loc.split(",")[0]), city, cat,
                          hhmm(*hm.groups()) if hm else None, None,
-                         urllib.parse.urljoin("https://dogodki.turizem-novagorica-vipavskadolina.si/", a["href"])))
+                         urllib.parse.urljoin("https://dogodki.turizem-novagorica-vipavskadolina.si/", a["href"]), ring=ring))
     return out
 
 

@@ -1,0 +1,102 @@
+[
+ {
+  "date": "2026-12-08",
+  "time": "18:00",
+  "title": "Božično-novoletni koncert oddelka Pihal, Trobil in Tolkal",
+  "venue": "Glasbena šola Nova Gorica",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "glasbena-sola.si",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "free": true
+ },
+ {
+  "date": "2026-12-09",
+  "time": "18:00",
+  "title": "Božično-novoletni nastop v Vili Vipolže",
+  "venue": "Vila Vipolže",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "glasbena-sola.si",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "free": true,
+  "ring": true
+ },
+ {
+  "date": "2026-12-15",
+  "time": "18:00",
+  "title": "Živalski karneval, nastop baletnega oddelka",
+  "venue": "Glasbena šola Nova Gorica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "glasbena-sola.si",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "free": true
+ },
+ {
+  "date": "2026-12-16",
+  "time": "18:00",
+  "title": "Božično-novoletni koncert Pgš",
+  "venue": "Coroninijev dvorec, Šempeter",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "glasbena-sola.si",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "free": true
+ },
+ {
+  "date": "2026-12-18",
+  "time": "18:00",
+  "title": "Božično-novoletni koncert",
+  "venue": "Glasbena šola Nova Gorica",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "glasbena-sola.si",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "free": true
+ },
+ {
+  "date": "2027-01-21",
+  "time": "18:00",
+  "title": "Koncert Jazz oddelka",
+  "venue": "Glasbena šola Nova Gorica",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "glasbena-sola.si",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "free": true
+ },
+ {
+  "date": "2027-02-03",
+  "time": "18:00",
+  "title": "Večer klavirskih etud",
+  "venue": "Glasbena šola Nova Gorica",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "glasbena-sola.si",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "free": true
+ },
+ {
+  "date": "2027-02-05",
+  "time": "18:00",
+  "title": "2. tematski koncert: Prešernov dan – slovenski skladatelji",
+  "venue": "Glasbena šola Nova Gorica",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "glasbena-sola.si",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "free": true
+ },
+ {
+  "date": "2027-02-11",
+  "time": "18:00",
+  "title": "Koncert v sodelovanju z GŠ Slovenska Bistrica – Učitelji za učence",
+  "venue": "Glasbena šola Nova Gorica",
+  "city": "NG",
+  "cat": "glasba",
+  "src": "glasbena-sola.si",
+  "url": "https://www.glasbena-sola.si/nastopi-in-koncerti/",
+  "free": true
+ }
+]

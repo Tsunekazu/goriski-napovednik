@@ -15,8 +15,8 @@ DAYS = 91  # koliko dni vnaprej zbiramo (enako kot stran)
 CATS = ("glasba", "gledalisce", "film")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36 (goriski-napovednik)"
 
-# Območje. Okolico (Brda, Krmin, Gradišče ...) vklopiš z INCLUDE_RING = True.
-INCLUDE_RING = False
+# Območje. Okolico (Brda, Krmin, Gradišče ...) označimo z ring=True (na strani privzeto skrita za stikalom Okolica).
+INCLUDE_RING = True
 SI_CORE = ["nova gorica", "novi gorici", "solkan", "kromberk", "rožna dolina", "šempeter", "vrtojba", "branik", "prvačina", "šempas",
            "osek", "vitovlje", "ozeljan", "grgar", "ravnica", "banjšice", "trnovo", "lokve", "čepovan", "lokovec", "ajševica",
            "loke", "stara gora", "dornberk", "gradišče nad prvačino", "zalošče", "saksid", "pristava"]
@@ -35,20 +35,25 @@ def _rx(words):
 _SI, _IT, _SIR, _ITR = _rx(SI_CORE), _rx(IT_CORE), _rx(SI_RING), _rx(IT_RING)
 
 
-def area(text):
-    """Vrne 'NG' (slovenska stran), 'GO' (italijanska stran) ali None, če kraj ni na našem območju.
+def area_zone(text):
+    """Vrne (mesto, okolica): ('NG'|'GO', False) za jedro, ('NG'|'GO', True) za okolico ali (None, False).
     Slovensko stran preverimo prvo, ker 'Nova Gorica' vsebuje 'Gorica'; okolico pred Gorico,
     ker italijanski naslovi končajo s pokrajino (npr. 'Cormòns, Gorizia')."""
     t = text or ""
     if _SI.search(t):
-        return "NG"
+        return "NG", False
     if _SIR.search(t):
-        return "NG" if INCLUDE_RING else None
+        return ("NG", True) if INCLUDE_RING else (None, False)
     if _ITR.search(t):
-        return "GO" if INCLUDE_RING else None
+        return ("GO", True) if INCLUDE_RING else (None, False)
     if _IT.search(t):
-        return "GO"
-    return None
+        return "GO", False
+    return None, False
+
+
+def area(text):
+    """Vrne 'NG' (slovenska stran), 'GO' (italijanska stran) ali None, če kraj ni na našem območju."""
+    return area_zone(text)[0]
 
 
 def today():
@@ -101,35 +106,99 @@ def clean(s):
 
 
 ACRONYMS = {"SNG", "SSG", "KUD", "KD", "KC", "SKD", "SKRD", "ZSKD", "ZKD", "DJ", "FVG", "GO!", "UK", "USA", "LP", "MC", "TV", "EU",
-            "ARCI", "RAI", "NATO", "AI", "ZSKP", "TIC", "GO"}
+            "ARCI", "RAI", "NATO", "AI", "ZSKP", "TIC", "GO", "NG", "KGBL", "BBC", "CD", "EP", "VIP", "DIY", "JSKD", "EZTS", "GECT"}
+LOWER_SHORT = {"of", "in", "on", "at", "to", "by", "or", "as", "an", "di", "da", "de", "ed", "il", "la", "le", "lo", "li", "un",
+               "su", "al", "na", "za", "po", "ob", "od", "do", "iz", "ki", "pa", "se", "si", "je", "ni", "ne", "so", "bo", "bi",
+               "ta", "to", "te", "ti", "et", "du", "au", "en", "el"}
+PROPER_NOUNS = {"gorica", "gorici", "gorice", "gorico", "gorizia", "ljubljana", "ljubljani", "ljubljane", "ljubljano",
+                "slovenija", "sloveniji", "slovenije", "slovenka", "slovenec", "italija", "italiji", "italije", "italia",
+                "evropa", "evrope", "europa", "solkan", "kromberk", "šempeter", "vrtojba", "brda", "vipolže", "dobrovo",
+                "šmartno", "medana", "vipava", "ajdovščina", "tolmin", "idrija", "bovec", "kobarid", "kanal", "miren",
+                "renče", "branik", "prvačina", "kostanjevica", "soča", "soče", "soči", "sočo", "isonzo", "kras", "trst", "trieste", "koper",
+                "piran", "maribor", "celje", "kranj", "videm", "udine", "krmin", "cormons", "cormòns", "gradišče", "gradisca",
+                "števerjan", "štandrež", "doberdob", "doberdò", "furlanija", "friuli", "venezia", "giulia", "tartini",
+                "verdi", "bratuž", "bevk", "modugno", "mozart", "bach", "beethoven", "chopin", "vivaldi", "puccini",
+                "rossini", "shakespeare", "cankar", "prešeren"}
 _ROMAN = re.compile(r"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})\.$")
 
 
 def _keep(w):
-    """Besede, ki ostanejo z velikimi črkami: kratice, rimske številke (XIV.) in besede s števkami (MNA3)."""
+    """Besede, ki ostanejo z velikimi črkami: kratice, rimske številke (XIV.), oznake držav (I) in besede s števkami (MNA3)."""
+    if re.match(r"^\([A-Z]{1,3}\)$", w):
+        return True
     core = w.strip("()[]\"'„“”,:;")
     return core.strip(".!?/|&") in ACRONYMS or _ROMAN.match(core) or any(c.isdigit() for c in core)
 
 
-def _cap(w):
-    core = w.strip("()[]\"'„“”,:;.!?/|&")
-    if _keep(w) or sum(c.isalpha() for c in core) < 3 or not core.isupper():
-        return w
-    w = w.lower()
+def _title_first(w):
     m = re.search(r"[^\W\d_]", w)
     return w[:m.start()] + w[m.start()].upper() + w[m.start() + 1:] if m else w
 
 
+def _cap_part(p, force_cap=False):
+    core = p.strip("()[]\"'„“”,:;.!?")
+    if not core or _keep(p):
+        return p
+    if core.isupper():
+        low = p.lower()
+        if not force_cap and core.lower() in LOWER_SHORT:
+            return low
+        if sum(c.isalpha() for c in core) >= 3 or force_cap:
+            return _title_first(low)
+    return p
+
+
+def _cap(w, force_cap=False):
+    if _keep(w):
+        return w
+    parts = re.split(r"([&/])", w)
+    if len(parts) > 1:
+        return "".join(
+            sep if i % 2 else _cap_part(sep, force_cap=(force_cap or i > 0))
+            for i, sep in enumerate(parts)
+        )
+    return _cap_part(w, force_cap=force_cap)
+
+
+def _restore_proper(w, cap_next):
+    if _keep(w):
+        return w
+    parts = re.split(r"([&/])", w)
+    out = []
+    for i, p in enumerate(parts):
+        if i % 2:
+            out.append(p)
+            continue
+        core = p.strip("()[]\"'„“”,:;.!?").lower()
+        low = p.lower()
+        if cap_next or i > 0 or core in PROPER_NOUNS:
+            out.append(_title_first(low))
+        else:
+            out.append(low)
+    return "".join(out)
+
+
 def nice_title(s):
-    """Naslov, napisan s samimi velikimi črkami, pretvori v običajno pisavo (velika le prva črka)."""
+    """Naslov, napisan s samimi velikimi črkami, pretvori v običajno pisavo (obdrži kratice in znana lastna imena)."""
     s = clean(s).strip(" -–—|·")
     letters = [c for c in s if c.isalpha()]
     if len(letters) < 4 or sum(c.isupper() for c in letters) / len(letters) < 0.8:
-        return " ".join(_cap(w) for w in s.split(" "))  # le posamezne besede z velikimi črkami (TAFITI → Tafiti)
-    words = [w if _keep(w) else w.lower() for w in s.split(" ")]
-    s = " ".join(words)
-    m = re.search(r"[^\W\d_]", s)
-    return s[:m.start()] + s[m.start()].upper() + s[m.start() + 1:] if m else s
+        words = s.split(" ")
+        return " ".join(_cap(w, force_cap=(i == 0)) for i, w in enumerate(words))
+    words, out = s.split(" "), []
+    cap_next = True
+    for w in words:
+        if w in ("/", "|", "–", "—", "-", ":"):
+            out.append(w)
+            cap_next = True
+            continue
+        out.append(_restore_proper(w, cap_next))
+        cap_next = w.endswith((":", "?", "!", "/", "|"))
+    res = " ".join(out)
+    res = re.sub(r"\bnova gorica\b", "Nova Gorica", res, flags=re.I)
+    res = re.sub(r"\bnovi gorici\b", "Novi Gorici", res, flags=re.I)
+    res = re.sub(r"\bdan d\b", "Dan D", res, flags=re.I)
+    return res
 
 
 # ——— datumi ———
@@ -254,9 +323,9 @@ def venue_name(text, default=None):
     return default if default is not None else clean(text)
 
 
-def event(src, date, title, venue, city, cat, time=None, sub=None, url=None, price=None, free=None, regular=None):
+def event(src, date, title, venue, city, cat, time=None, sub=None, url=None, price=None, free=None, regular=None, ring=None):
     e = {"date": date, "time": time, "title": title, "venue": venue, "city": city, "cat": cat, "src": src}
-    for k, v in (("sub", sub), ("url", url), ("price", price), ("free", free), ("regular", regular)):
+    for k, v in (("sub", sub), ("url", url), ("price", price), ("free", free), ("regular", regular), ("ring", ring)):
         if v:
             e[k] = v
     return e

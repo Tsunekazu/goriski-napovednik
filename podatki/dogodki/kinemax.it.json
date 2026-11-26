@@ -7,7 +7,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Hexe: il regno delle streghe 17:30 · Hunger games l'alba sulla mietitura 17:30, 20:20 · Storie parallele 17:40, 20:20 · Fjord 20:15",
+  "sub": "Fjord 20:15 · Storie parallele 20:20 · Hunger games l'alba sulla mietitura 20:20",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -19,7 +19,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Hexe: il regno delle streghe 17:30 · Hunger games l'alba sulla mietitura 17:30, 20:20 · Fjord 20:15 · Storie parallele 20:20",
+  "sub": "Hunger games l'alba sulla mietitura 17:30, 20:20 · Hexe: Il regno delle streghe 17:30 · Fjord 20:15 · Storie parallele 20:20",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -31,7 +31,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Hexe: il regno delle streghe 15:10, 17:15 · Se domani non torno 15:10 · Storie parallele 15:20, 20:00 · Hunger games l'alba sulla mietitura 17:00, 20:20 · Fjord 17:40, 20:15",
+  "sub": "Hexe: Il regno delle streghe 15:10, 17:15 · Se domani non torno 15:10 · Storie parallele 15:20, 20:00 · Hunger games l'alba sulla mietitura 17:00, 20:20 · Fjord 17:40, 20:15",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -43,7 +43,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Se domani non torno 15:00 · Hexe: il regno delle streghe 15:10, 17:15 · Storie parallele 15:20, 20:00 · Hunger games l'alba sulla mietitura 17:00, 20:00 · Fjord 17:40, 20:15",
+  "sub": "Se domani non torno 15:00 · Hexe: Il regno delle streghe 15:10, 17:15 · Storie parallele 15:20, 20:00 · Hunger games l'alba sulla mietitura 17:00 · Fjord 17:40, 20:15 · Werner herzog. radical dreamer (OVS) 20:00",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -55,7 +55,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Hexe: il regno delle streghe 17:30 · Hunger games l'alba sulla mietitura 17:30 · Fjord 17:40 · Werner herzog. radical dreamer (ovs) 20:00 · Storie parallele 20:15 · Bellissima (ed. rest.) 20:30",
+  "sub": "Hunger games l'alba sulla mietitura 17:30 · Hexe: Il regno delle streghe 17:30 · Fjord 17:40 · Werner herzog. radical dreamer (OVS) 20:00 · Storie parallele 20:15 · Bellissima (ed. rest.) 20:30",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -67,7 +67,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Hexe: il regno delle streghe 17:30 · Hunger games l'alba sulla mietitura 17:30 · Fjord 17:40 · Werner herzog. radical dreamer (ovs) 20:00 · Storie parallele 20:15 · Puan 20:30",
+  "sub": "Hunger games l'alba sulla mietitura 17:30 · Hexe: Il regno delle streghe 17:30 · Fjord 17:40 · Werner herzog. radical dreamer (OVS) 20:00 · Storie parallele 20:15 · Puan - Il professore 20:30",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -79,7 +79,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Hexe: il regno delle streghe 17:30 · Hunger games l'alba sulla mietitura 17:30, 20:20 · Storie parallele 17:40, 20:00 · Fjord 20:15",
+  "sub": "Hunger games l'alba sulla mietitura 17:30, 20:20 · Hexe: Il regno delle streghe 17:30 · Storie parallele 17:40, 20:00 · Fjord 20:15",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  },
@@ -103,7 +103,7 @@
   "city": "GO",
   "cat": "film",
   "src": "kinemax.it",
-  "sub": "Avengers: doomsday 17:00, 20:30",
+  "sub": "Avengers: Doomsday 17:00, 20:30",
   "url": "https://www.kinemax.it/orari.php",
   "regular": true
  }

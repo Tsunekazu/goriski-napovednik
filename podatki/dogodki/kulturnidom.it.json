@@ -1,38 +1,5 @@
 [
  {
-  "date": "2026-10-19",
-  "time": "20:30",
-  "title": "For heavens sake",
-  "venue": "Kulturni dom Gorica",
-  "city": "GO",
-  "cat": "glasba",
-  "src": "kulturnidom.it",
-  "sub": "Zerorchestra",
-  "url": "https://kulturnidom.it/wp/evento/for-heavens-sake-zerorchestra/"
- },
- {
-  "date": "2026-10-30",
-  "time": "20:30",
-  "title": "Elephant man",
-  "venue": "Kulturni dom Gorica",
-  "city": "GO",
-  "cat": "gledalisce",
-  "src": "kulturnidom.it",
-  "sub": "Goriški grad",
-  "url": "https://kulturnidom.it/wp/evento/elephant-man-goriski-grad/"
- },
- {
-  "date": "2026-11-07",
-  "time": "20:30",
-  "title": "Tre papà e un bebè",
-  "venue": "Kulturni dom Gorica",
-  "city": "GO",
-  "cat": "gledalisce",
-  "src": "kulturnidom.it",
-  "sub": "Goriški grad",
-  "url": "https://kulturnidom.it/wp/evento/tre-papa-e-un-bebe-goriski-grad/"
- },
- {
   "date": "2026-11-30",
   "time": "20:00",
   "title": "Žile",
@@ -41,7 +8,7 @@
   "cat": "gledalisce",
   "src": "kulturnidom.it",
   "sub": "Abonma SSG",
-  "url": "https://kulturnidom.it/wp/evento/zile-abonma-ssg/"
+  "url": "https://kulturnidom.it/evento/zile-abonma-ssg/"
  },
  {
   "date": "2026-12-14",
@@ -52,17 +19,50 @@
   "cat": "gledalisce",
   "src": "kulturnidom.it",
   "sub": "Abonma SSG & Komigo",
-  "url": "https://kulturnidom.it/wp/evento/kje-je-primadona-abonma-ssg-komigo/"
+  "url": "https://kulturnidom.it/evento/kje-je-primadona-abonma-ssg-komigo/"
  },
  {
   "date": "2026-12-18",
   "time": "20:30",
-  "title": "Volare con domenico modugno",
+  "title": "Volare con domenico Modugno",
   "venue": "Kulturni dom Gorica",
   "city": "GO",
   "cat": "glasba",
   "src": "kulturnidom.it",
   "sub": "Goriški grad",
-  "url": "https://kulturnidom.it/wp/evento/volare-con-domenico-modugno-goriski-grad/"
+  "url": "https://kulturnidom.it/evento/volare-con-domenico-modugno-goriski-grad/"
+ },
+ {
+  "date": "2027-01-18",
+  "time": "20:00",
+  "title": "Zmaga",
+  "venue": "KC Lojze Bratuž",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "kulturnidom.it",
+  "sub": "Abonma SSG",
+  "url": "https://kulturnidom.it/evento/zmaga-abonma-ssg/"
+ },
+ {
+  "date": "2027-01-30",
+  "time": "20:30",
+  "title": "Le allegre historie del decamerone",
+  "venue": "Kulturni dom Gorica",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "kulturnidom.it",
+  "sub": "Goriški grad",
+  "url": "https://kulturnidom.it/evento/le-allegre-historie-del-decamerone-goriski-grad/"
+ },
+ {
+  "date": "2027-02-13",
+  "time": "20:30",
+  "title": "35 anni senza battere ciglio",
+  "venue": "Kulturni dom Gorica",
+  "city": "GO",
+  "cat": "gledalisce",
+  "src": "kulturnidom.it",
+  "sub": "Goriški grad – nagrajevanja",
+  "url": "https://kulturnidom.it/evento/35-anni-senza-battere-ciglio-goriski-grad-nagrajevanja/"
  }
 ]

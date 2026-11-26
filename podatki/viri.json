@@ -286,7 +286,7 @@
  {
   "key": "kulturnidom.it",
   "name": "Kulturni dom Gorica",
-  "url": "https://kulturnidom.it/wp/eventi/",
+  "url": "https://kulturnidom.it/eventi/",
   "side": "IT",
   "zone": "core",
   "type": "venue",
@@ -295,7 +295,7 @@
    "gledalisce",
    "film"
   ],
-  "fetch": "tribe:https://kulturnidom.it/wp",
+  "fetch": "tribe:https://kulturnidom.it",
   "status": "active",
   "prio": 1,
   "how": "Čist vir prek API-ja."

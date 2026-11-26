@@ -13,8 +13,21 @@ DATA = os.path.join(ROOT, "podatki")
 OUT = os.path.join(ROOT, "_site")
 CATS = {"glasba", "gledalisce", "film"}
 DAYS = 91  # obzorje: danes + 91 dni (stran prikaže 92 dni)
-STALE_DAYS = 3  # vir, ki se toliko dni ni posodobil, je v nogi označen
-FIELDS = ("date", "time", "title", "sub", "venue", "city", "cat", "url", "price", "free", "regular")
+STALE_DAYS = 3  # redni vir, ki se toliko dni ni posodobil, je v nogi označen
+AI_STALE_DAYS = 14  # AI viri se preverjajo na nekaj dni ali ročno
+FIELDS = ("date", "time", "title", "sub", "venue", "city", "cat", "url", "price", "free", "regular", "ring")
+
+
+def clean_sub(sub):
+    """Odstrani podvojene ponovitve (npr. 'Abonma · Velika dvorana – Abonma')."""
+    if not sub:
+        return None
+    parts = [p.strip() for p in sub.split(" · ") if p.strip()]
+    if len(parts) == 2 and parts[0].lower() in parts[1].lower():
+        parts[1] = re.sub(r"\s*[–—-]\s*" + re.escape(parts[0]) + r"\s*$", "", parts[1], flags=re.I).strip()
+        if parts[1].lower() == parts[0].lower():
+            parts.pop()
+    return " · ".join(p for p in parts if p) or None
 
 
 def norm(s):
@@ -56,12 +69,26 @@ def read_json(path, default):
 
 def load(viri, start, end):
     prio = {s["key"]: s.get("prio", 9) for s in viri}
+    prio["rocni"] = 0
     events = []
-    for s in viri:
-        for e in read_json(os.path.join(DATA, "dogodki", s["key"] + ".json"), []):
-            if e.get("cat") in CATS and start <= e.get("date", "") <= end:
+    sources_data = [(s["key"], read_json(os.path.join(DATA, "dogodki", s["key"] + ".json"), [])) for s in viri]
+    manual = read_json(os.path.join(DATA, "rocni.json"), [])
+    if isinstance(manual, list) and manual:
+        sources_data.append(("rocni", manual))
+    for key, items in sources_data:
+        for raw in items:
+            if not isinstance(raw, dict):
+                continue
+            e = dict(raw)
+            e.setdefault("src", key)
+            if (e.get("cat") in CATS and e.get("city") in ("NG", "GO") and e.get("title")
+                    and start <= e.get("date", "") <= end):
                 if not re.match(r"https?://", e.get("url") or ""):
                     e.pop("url", None)
+                if e.get("sub"):
+                    e["sub"] = clean_sub(e["sub"])
+                    if not e["sub"]:
+                        e.pop("sub", None)
                 events.append(e)
     # isti dogodek na več virih: obdržimo zapis z glavnega vira (najnižji prio), manjkajoče podatke dopolnimo z drugih
     events.sort(key=lambda e: (e["date"], prio.get(e.get("src"), 9), e.get("time") or "99", -len(e.get("sub") or "")))
@@ -96,12 +123,16 @@ def main():
     # v nogi le viri, ki jih res beremo; tisti, ki se dlje časa niso posodobili, dobijo datum zadnje posodobitve
     sources = []
     for s in viri:
-        ok = (stanje.get(s["key"]) or {}).get("ok")
+        st = stanje.get(s["key"]) or {}
+        ok = st.get("checked") or st.get("ok") if s.get("fetch") == "ai" else st.get("ok")
         if not ok:
+            continue
+        if s.get("fetch") == "ai" and not by_src.get(s["key"]) and s.get("status") != "active":
             continue
         src = {"name": s["name"], "url": s["url"]}
         last = dt.date.fromisoformat(ok[:10])
-        if (today - last).days >= STALE_DAYS:
+        limit = AI_STALE_DAYS if s.get("fetch") == "ai" else STALE_DAYS
+        if (today - last).days >= limit or st.get("error"):
             src["stale"] = f"{last.day}. {last.month}. {last.year}"
         sources.append(src)
 
@@ -116,7 +147,8 @@ def main():
         f.write(page)
 
     nonreg = [e for e in events if not e.get("regular")]
-    print(f"{len(events)} dogodkov ({len(nonreg)} brez rednega kino sporeda), {harvest} – {end}")
+    ring = [e for e in nonreg if e.get("ring")]
+    print(f"{len(events)} dogodkov ({len(nonreg)} brez rednega kino sporeda, {len(ring)} v okolici), {harvest} – {end}")
     print("po mesecih:", dict(sorted(Counter(e["date"][:7] for e in nonreg).items())))
     print("po zvrsteh:", dict(Counter(e["cat"] for e in nonreg)))
     print("po virih:", dict(by_src))

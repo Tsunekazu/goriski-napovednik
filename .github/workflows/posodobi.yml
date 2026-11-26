@@ -24,8 +24,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       AI_MODEL: ${{ vars.AI_MODEL }}
+      AI_MIN_DAYS: ${{ vars.AI_MIN_DAYS }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -34,7 +36,7 @@ jobs:
       - name: Namesti knjižnice
         run: |
           pip install -r requirements.txt
-          if [ -n "$ANTHROPIC_API_KEY" ]; then pip install anthropic; fi
+          if [ -z "$GEMINI_API_KEY" ] && [ -n "$ANTHROPIC_API_KEY" ]; then pip install anthropic; fi
       - name: Poberi dogodke
         run: python -m zbiralnik
       - name: Shrani podatke
