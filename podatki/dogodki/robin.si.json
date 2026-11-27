@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-27",
+  "time": null,
+  "title": "Filmi med 27.11 in 1.12. 2026",
+  "venue": "Kulturni dom Nova Gorica",
+  "city": "NG",
+  "cat": "film",
+  "src": "robin.si",
+  "url": "https://www.robin.si/dogodek/nova-gorica-kulturni-dom-filmi-med-27-11-in-1-12-2026/"
+ },
+ {
   "date": "2026-11-28",
   "time": "17:30",
   "title": "Junaki Soče; dodatna projekcija filma",
@@ -42,5 +52,17 @@
   "src": "robin.si",
   "sub": "SEZONA SSG 2026/27",
   "url": "https://www.robin.si/dogodek/gorica-kulturni-dom-sezona-ssg-2026-27-predstava-zile/"
+ },
+ {
+  "date": "2026-12-03",
+  "time": "16:00",
+  "title": "Zgodbe iz življenja aleksandrink v prozi in poeziji",
+  "venue": "krajevna knjižnica",
+  "city": "NG",
+  "cat": "gledalisce",
+  "src": "robin.si",
+  "sub": "Kamišibaj pripovedovanje",
+  "url": "https://www.robin.si/dogodek/miren-krajevna-knjiznica-kamisibaj-pripovedovanje-zgodbe-iz-zivljenja-aleksandrink-v-prozi-in-poeziji/",
+  "ring": true
  }
 ]
