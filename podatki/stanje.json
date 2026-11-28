@@ -1,59 +1,69 @@
 {
  "kulturnidom-ng.si": {
   "ok": "2026-11-27T11:59+01:00",
-  "n": 25
+  "n": 25,
+  "error": "0 dogodkov, prej jih je bilo več: morda se je stran spremenila",
+  "failed": "2026-11-28T11:37+01:00"
  },
  "sng-ng.si": {
-  "ok": "2026-11-27T11:59+01:00",
-  "n": 18
+  "ok": "2026-11-28T11:37+01:00",
+  "n": 17
  },
  "mostovna.com": {
   "ok": "2026-11-27T11:59+01:00",
-  "n": 6
+  "n": 6,
+  "error": "0 dogodkov, prej jih je bilo več: morda se je stran spremenila",
+  "failed": "2026-11-28T11:37+01:00"
  },
  "zkdng.si": {
   "ok": "2026-11-27T11:59+01:00",
-  "n": 0
+  "n": 0,
+  "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "failed": "2026-11-28T11:37+01:00"
  },
  "turizem-novagorica-vipavskadolina.si": {
-  "ok": "2026-11-27T11:59+01:00",
-  "n": 4
+  "ok": "2026-11-28T11:37+01:00",
+  "n": 3
  },
  "robin.si": {
   "ok": "2026-11-27T11:59+01:00",
-  "n": 6
+  "n": 6,
+  "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "failed": "2026-11-28T11:37+01:00"
  },
  "kulturnidom.it": {
-  "ok": "2026-11-27T11:59+01:00",
+  "ok": "2026-11-28T11:37+01:00",
   "n": 8
  },
  "centerbratuz.org": {
   "ok": "2026-11-27T11:59+01:00",
-  "n": 19
+  "n": 19,
+  "error": "0 dogodkov, prej jih je bilo več: morda se je stran spremenila",
+  "failed": "2026-11-28T11:37+01:00"
  },
  "kinemax.it": {
-  "ok": "2026-11-27T11:59+01:00",
-  "n": 8
+  "ok": "2026-11-28T11:37+01:00",
+  "n": 7
  },
  "teatroverdi.gorizia.it": {
-  "ok": "2026-11-27T11:59+01:00",
+  "ok": "2026-11-28T11:37+01:00",
   "n": 13
  },
  "artistiassociatigorizia.it": {
-  "ok": "2026-11-27T11:59+01:00",
+  "ok": "2026-11-28T11:37+01:00",
   "n": 19
  },
  "zskd.eu": {
-  "ok": "2026-11-27T11:59+01:00",
+  "ok": "2026-11-28T11:37+01:00",
   "n": 0
  },
  "zskp.eu": {
-  "ok": "2026-11-27T11:59+01:00",
+  "ok": "2026-11-28T11:37+01:00",
   "n": 0
  },
  "scopri.gorizia.it": {
-  "ok": "2026-11-27T11:59+01:00",
-  "n": 2
+  "ok": "2026-11-28T11:37+01:00",
+  "n": 1
  },
  "glasbena-sola.si": {
   "ok": "2026-11-26T19:18+01:00",
